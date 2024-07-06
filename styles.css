@@ -1,0 +1,238 @@
+:root {
+  --main: #131313;
+  --accent: rgba(181, 131, 141, 0.95);
+  --font: #f5eee6;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  color: var(--font);
+}
+body {
+  background-color: var(--main);
+}
+main {
+  margin-top: 90px;
+}
+h1 {
+  font-size: 6rem;
+}
+h2 {
+  font-size: 4rem;
+}
+span {
+  display: block;
+}
+.nav-div-container {
+  width: 100%;
+  height: 90px;
+  background-color: var(--accent);
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  backdrop-filter: blur(6px);
+}
+.name {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 2vw;
+}
+.name p {
+  font-size: 3rem;
+  font-family: rouge script;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 2rem;
+}
+a {
+  height: 5rem;
+  font-size: 3rem;
+  text-decoration: none;
+  margin: auto 1.5rem;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+}
+.main-container-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 28px 4rem;
+}
+.h1-container {
+  padding: 10rem 0 0 3.5rem;
+}
+.wel-h1-span {
+  font-size: 15vh;
+}
+.intro-div {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 28vw;
+  max-height: 26vh;
+}
+.wel-div-span {
+  font-size: 3rem;
+}
+.main-container-2 {
+  padding: 40vh 28px 0 28px;
+  background-image: url(https://www.schillerandbodo.com/artworks/1042/xxlarge/irolli300.jpg?1315603221);
+  animation: fade-in ease 3.5s;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-sub-span {
+  font-size: 2.5rem;
+}
+.main-container-3 {
+  padding: 10vh auto;
+  margin: 20rem 0 20rem;
+}
+.container-3-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-auto-rows: 32rem;
+  padding: 0 8vw;
+  row-gap: 10px;
+  column-gap: 10px;
+  text-align: center;
+  align-items: center;
+}
+.grid-box-1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.grid-box-1a {
+  grid-column: 1;
+  grid-row: 2;
+}
+.grid-box-2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.grid-box-1b {
+  grid-column: 2;
+  grid-row: 2;
+}
+.grid-box-3 {
+  grid-column: 3;
+  grid-row: 1;
+}
+.grid-box-1c {
+  grid-column: 3;
+  grid-row: 2;
+}
+.grid-img {
+  width: 100%;
+  height: 100%;
+}
+.linka {
+  padding: 0 auto;
+}
+.linka:hover {
+  background-color: var(--accent);
+  width: 80%;
+  height: 30%;
+}
+.line {
+  border: 1px solid var(--accent);
+  width: 80%;
+  margin: auto;
+}
+.connect h1 {
+  font-size: 25rem;
+}
+.ul-contacts {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin-top: -3rem;
+}
+
+.invs:hover {
+  background-color: transparent;
+  border: none;
+}
+a:hover {
+  border: 2px solid var(--main);
+  border-radius: 24px;
+  font-style: italic;
+  background-color: var(--main);
+}
+
+@media only screen and (min-width: 1920px) {
+  nav {
+    margin-right: 3rem;
+  }
+  a,
+  .name p {
+    margin: auto 3rem;
+    font-size: 4rem;
+  }
+  .intro-div {
+    max-width: 30vw;
+  }
+  .wel-h1-span {
+    font-size: 20vh;
+    margin-left: 3rem;
+  }
+  .wel-div-span {
+    font-size: 4rem;
+  }
+  .main-container-2 {
+    margin-top: 5rem;
+    padding-top: 30vh;
+    padding-bottom: 40vh;
+  }
+  .main-container-2 h1 {
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 10rem;
+  }
+  .about-sub-span {
+    font-weight: bold;
+    font-size: 6rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .main-container-1 {
+    height: 60vh;
+    align-items: flex-start;
+  }
+  .wel-h1-span {
+    font-size: 10vh;
+  }
+  .wel-div-span {
+    font-size: 2.5.7rem;
+  }
+  .intro-div {
+    justify-content: center;
+    max-height: 15vh;
+    max-width: 80rem;
+    padding-top: 10px;
+    margin-top: 370px;
+    position: absolute;
+  }
+  .main-container-2 {
+    padding-top: 5vh;
+    padding-bottom: 15vh;
+  }
+  .connect h1 {
+    font-size: 20rem;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
