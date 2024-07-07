@@ -1,7 +1,7 @@
 :root {
-  --main: #131313;
+  --main: #0c0404;
   --accent: rgba(181, 131, 141, 0.95);
-  --font: #f5eee6;
+  --font: #f2f2f2;
 }
 * {
   margin: 0;
@@ -57,6 +57,7 @@ a {
   padding: 0 1rem;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .main-container-1 {
   display: flex;
@@ -101,7 +102,6 @@ a {
   row-gap: 10px;
   column-gap: 10px;
   text-align: center;
-  align-items: center;
 }
 .grid-box-1 {
   grid-column: 1;
@@ -114,12 +114,6 @@ a {
 .grid-box-3 {
   grid-column: 3;
   grid-row: 1;
-}
-.linka {
-  padding: 0 auto;
-}
-.linka:hover {
-  cursor: pointer;
 }
 .line {
   border: 1px solid var(--accent);
@@ -144,7 +138,6 @@ a {
 a:hover {
   border: 2px solid var(--main);
   border-radius: 24px;
-  font-style: italic;
   background-color: var(--main);
 }
 
@@ -194,7 +187,7 @@ a:hover {
     font-size: 2.5.7rem;
   }
   .intro-div {
-    justify-content: center;
+    justify-content: left;
     max-height: 15vh;
     max-width: 80rem;
     padding-top: 10px;
