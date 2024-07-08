@@ -81,7 +81,7 @@ a {
   font-size: 3rem;
 }
 .main-container-2 {
-  padding: 40vh 28px 0 28px;
+  padding: 40vh 28px 1.5rem 28px;
   background-image: url(https://www.schillerandbodo.com/artworks/1042/xxlarge/irolli300.jpg?1315603221);
   animation: fade-in ease 3.5s;
   background-repeat: no-repeat;
@@ -106,6 +106,7 @@ a {
 .grid-box-1 {
   grid-column: 1;
   grid-row: 1;
+  background-color: var(--font);
 }
 .grid-box-2 {
   grid-column: 2;
@@ -130,15 +131,12 @@ a {
   list-style: none;
   margin-top: -3rem;
 }
-
 .invs:hover {
   background-color: transparent;
   border: none;
 }
 a:hover {
-  border: 2px solid var(--main);
-  border-radius: 24px;
-  background-color: var(--main);
+  color: var(--accent);
 }
 
 @media only screen and (min-width: 1920px) {
@@ -162,8 +160,8 @@ a:hover {
   }
   .main-container-2 {
     margin-top: 5rem;
-    padding-top: 30vh;
-    padding-bottom: 40vh;
+    padding-top: 65vh;
+    padding-bottom: 1vh;
   }
   .main-container-2 h1 {
     color: var(--accent);
@@ -178,25 +176,25 @@ a:hover {
 @media only screen and (max-width: 1200px) {
   .main-container-1 {
     height: 60vh;
-    align-items: flex-start;
+    align-items: start;
   }
   .wel-h1-span {
     font-size: 10vh;
   }
   .wel-div-span {
-    font-size: 2.5.7rem;
+    font-size: 3rem;
   }
   .intro-div {
     justify-content: left;
     max-height: 15vh;
     max-width: 80rem;
     padding-top: 10px;
-    margin-top: 370px;
+    margin-top: 400px;
     position: absolute;
   }
   .main-container-2 {
-    padding-top: 5vh;
-    padding-bottom: 15vh;
+    padding-top: 15vh;
+    padding-bottom: 2vh;
   }
   .connect h1 {
     font-size: 20rem;
