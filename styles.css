@@ -1,6 +1,6 @@
 :root {
   --main: #0c0404;
-  --accent: rgba(181, 131, 141, 0.95);
+  --accent: #1c776d98;
   --font: #f2f2f2;
 }
 * {
@@ -19,30 +19,10 @@ h1 {
   font-size: 6rem;
 }
 h2 {
+  font-size: 15vh;
+}
+h3 {
   font-size: 4rem;
-}
-span {
-  display: block;
-}
-.nav-div-container {
-  width: 100%;
-  height: 90px;
-  background-color: var(--accent);
-  position: fixed;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  backdrop-filter: blur(6px);
-}
-.name {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  padding-left: 2vw;
-}
-.name p {
-  font-size: 3rem;
-  font-family: rouge script;
 }
 nav {
   display: flex;
@@ -59,84 +39,8 @@ a {
   align-items: center;
   cursor: pointer;
 }
-.main-container-1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 0 28px 4rem;
-}
-.h1-container {
-  padding: 10rem 0 0 3.5rem;
-}
-.wel-h1-span {
-  font-size: 15vh;
-}
-.intro-div {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 28vw;
-  max-height: 26vh;
-}
-.wel-div-span {
-  font-size: 3rem;
-}
-.main-container-2 {
-  padding: 40vh 28px 1.5rem 28px;
-  background-image: url(https://www.schillerandbodo.com/artworks/1042/xxlarge/irolli300.jpg?1315603221);
-  animation: fade-in ease 3.5s;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.about-sub-span {
-  font-size: 2.5rem;
-}
-.main-container-3 {
-  padding: 10vh auto;
-  margin: 20rem 0 20rem;
-}
-.container-3-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 33%);
-  grid-auto-rows: 32rem;
-  padding: 0 8vw;
-  row-gap: 10px;
-  column-gap: 10px;
-  text-align: center;
-}
-.grid-box-1 {
-  grid-column: 1;
-  grid-row: 1;
-  background-color: var(--font);
-}
-.grid-box-2 {
-  grid-column: 2;
-  grid-row: 1;
-}
-.grid-box-3 {
-  grid-column: 3;
-  grid-row: 1;
-}
-.line {
-  border: 1px solid var(--accent);
-  width: 80%;
-  margin: auto;
-}
-.connect h1 {
-  font-size: 25rem;
-  padding-left: 5rem;
-}
-.ul-contacts {
-  display: flex;
-  justify-content: flex-end;
-  list-style: none;
-  margin-top: -3rem;
-}
-.invs:hover {
-  background-color: transparent;
-  border: none;
-}
 a:hover {
-  color: var(--accent);
+  color: var(--main);
 }
 
 @media only screen and (min-width: 1920px) {
