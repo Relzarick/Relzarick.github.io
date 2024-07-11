@@ -13,5 +13,7 @@ fade the main image
 ~~improve readability for about section when maximized (push the whole section to the bottom)~~
 ~~make nav bar hover not pink~~
 fix the nav bar (projects not centering idk why)
-make projects nicer add boxx (50%)
+make projects nicer add boxx (70%)
 contacts hover change color
+make connect hover cleaner
+rescale projects image
