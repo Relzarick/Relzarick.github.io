@@ -17,3 +17,4 @@ make projects nicer add boxx (70%)
 contacts hover change color
 make connect hover cleaner
 rescale projects image
+changes is not being updated on github
