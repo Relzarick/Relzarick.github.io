@@ -4,7 +4,7 @@ redo the animations
 add blur
 fix the projects when minimized 
 ~~fix abt h1 clipping when minimized~~
-now the span is inside h1 when under 1200
+~~now the span is inside h1 when under 1200~~
 ~~clean up the code, split up styles~~
 ~~abt me right side padding~~
 fade the main image
@@ -13,8 +13,6 @@ fade the main image
 ~~improve readability for about section when maximized (push the whole section to the bottom)~~
 ~~make nav bar hover not pink~~
 fix the nav bar (projects not centering idk why)
-make projects nicer add boxx (70%)
-contacts hover change color
-make connect hover cleaner
+make projects nicer add boxx (80%)
 rescale projects image
-changes is not being updated on github
+~~
