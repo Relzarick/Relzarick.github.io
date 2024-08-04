@@ -1,0 +1,81 @@
+@media only screen and (min-width: 1920px) {
+  nav {
+    margin-right: 3rem;
+  }
+  a,
+  .name p {
+    margin: auto 3rem;
+    font-size: 4rem;
+  }
+  .intro-div {
+    max-width: 30vw;
+  }
+  .wel-h1-span {
+    font-size: 20vh;
+    margin-left: 3rem;
+  }
+  .wel-div-span {
+    font-size: 4rem;
+  }
+  .main-container-2 {
+    margin-top: 5rem;
+    padding-top: 65vh;
+    padding-bottom: 1vh;
+  }
+  .main-container-2 h1 {
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 10rem;
+  }
+  .h2-container {
+    padding: 10rem 0 0 3.5rem;
+  }
+  .about-sub-span {
+    font-weight: bold;
+    font-size: 6rem;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .main-container-1 {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .main-container-1 {
+    display: block;
+    height: 40vh;
+  }
+  .wel-h1-span {
+    font-size: 10vh;
+  }
+  .wel-div-span {
+    font-size: 3rem;
+  }
+  .h2-container h2 {
+    font-size: 10vh;
+    display: inline;
+    margin-right: 2rem;
+  }
+  .intro-div {
+    max-height: 10vh;
+    max-width: 80rem;
+    position: absolute;
+  }
+  .main-container-2 {
+    padding-top: 15vh;
+    padding-bottom: 2vh;
+  }
+  .connect h1 {
+    font-size: 20rem;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

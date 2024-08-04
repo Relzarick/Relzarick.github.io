@@ -19,13 +19,9 @@
   font-family: rouge script;
 }
 .main-container-1 {
-  display: flex;
   justify-content: space-between;
   align-items: flex-end;
   padding: 0 28px 4rem;
-}
-.h1-container {
-  padding: 10rem 0 0 3.5rem;
 }
 .intro-div {
   display: flex;
