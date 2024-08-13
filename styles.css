@@ -47,3 +47,8 @@ img {
   height: auto;
   width: 100%;
 }
+.line {
+  border: 1px solid var(--accent);
+  width: 80%;
+  margin: auto;
+}
