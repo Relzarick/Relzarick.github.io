@@ -12,7 +12,10 @@ fade the main image
 ** make accessible for mobile
 ~~improve readability for about section when maximized (push the whole section to the bottom)~~
 ~~make nav bar hover not pink~~
-fix the nav bar (projects not centering idk why)
-make projects nicer add boxx (80%)
+make projects nicer add boxx (60%)
+add icons to all projects
+projects heading clipping 
+readjust projects img scalling
+make it so when you click projects it brings up the project 
 rescale projects image
 ~~
