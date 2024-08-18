@@ -18,4 +18,5 @@ projects heading clipping
 readjust projects img scalling
 make it so when you click projects it brings up the project 
 rescale projects image
+make word float up on load
 ~~
