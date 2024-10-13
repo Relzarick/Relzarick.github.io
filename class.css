@@ -22,6 +22,7 @@
   justify-content: space-between;
   align-items: flex-end;
   padding: 0 28px 4rem;
+  margin-bottom: 8vh;
 }
 .intro-div {
   display: flex;
@@ -61,27 +62,24 @@
 .ul-contacts a:hover {
   color: var(--font);
 }
-
 .main-container-3 {
-  padding: 10vh auto;
+  padding: 10vh 5vw;
   margin: 20rem 0 20rem;
 }
-.container-3-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 33%);
-  padding: 0 8vw;
-  row-gap: 10px;
-  column-gap: 10px;
-  text-align: center;
+.container-3 {
+  padding: 0 5rem;
+  column-gap: 5rem;
+  display: flex;
 }
 .grid-container-box {
   background-color: var(--accent);
   color: var(--main);
-  border-radius: 1.5rem;
+  border-radius: 2.5rem;
+  max-width: 33%;
 }
 .img-box {
   margin: auto;
-  width: 75%;
+  width: 50%;
 }
 .highlight {
   color: var(--accent);
