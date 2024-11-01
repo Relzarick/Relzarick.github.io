@@ -66,20 +66,11 @@
   padding: 10vh 5vw;
   margin: 20rem 0 20rem;
 }
-.container-3 {
-  padding: 0 5rem;
-  column-gap: 5rem;
-  display: flex;
+.container-box {
+  margin: 5rem 0;
 }
-.grid-container-box {
-  background-color: var(--accent);
-  color: var(--main);
-  border-radius: 2.5rem;
-  max-width: 33%;
-}
-.img-box {
-  margin: auto;
-  width: 50%;
+.project-container-info {
+  display: inline-block;
 }
 .highlight {
   color: var(--accent);

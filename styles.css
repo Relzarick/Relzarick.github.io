@@ -2,7 +2,7 @@
   --main: #f5ece5;
   --accent: #1c776d98;
   --font: #0c0404;
-  --green: #51a687;
+  --projects: #212424;
 }
 * {
   margin: 0;
@@ -52,4 +52,10 @@ img {
   border: 1px solid var(--accent);
   width: 80%;
   margin: auto;
+}
+
+iframe {
+  border-radius: 0.5rem;
+  min-width: 40rem;
+  min-height: 40rem;
 }
