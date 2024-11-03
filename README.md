@@ -10,6 +10,9 @@ fade the main image
 
 -- add iframe to the projects
 cemnter
+******** work on the js*********
+when clicking img use js to display iframe 
+give breif summary of project and what i learned
 
 projects heading clipping 
 
