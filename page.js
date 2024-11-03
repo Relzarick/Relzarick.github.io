@@ -1,7 +1,21 @@
-const box1 = document.getElementById("box-");
-const box2 = document.getElementById("box-2");
-const box3 = document.getElementById("box-3");
+const ytbox = document.getElementById("box-1");
+const spbox = document.getElementById("box-2");
+const fccbox = document.getElementById("box-3");
 
-box1.addEventListener("click", () => {});
-box2.addEventListener("click", () => {});
-box3.addEventListener("click", () => {});
+let toggle = true;
+const containerEventAction = (container) => {
+  toggle = toggle ? false : true;
+  toggle === true
+    ? (container.style.display = "none")
+    : (container.style.display = "block");
+};
+
+ytbox.addEventListener("click", function () {
+  containerEventAction();
+});
+spbox.addEventListener("click", function () {
+  containerEventAction();
+});
+fccbox.addEventListener("click", function () {
+  containerEventAction();
+});
