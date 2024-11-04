@@ -29,6 +29,6 @@ details
 make the apostrophe change the theme of the page
 -- clean up the css & html naming scheme
 -- remove redundant code
-
+-- redo the nav into a hover to show hamburger icon
 
 ~~
