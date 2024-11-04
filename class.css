@@ -33,6 +33,7 @@
 .wel-div-span {
   font-size: 3rem;
 }
+
 .main-container-2 {
   padding: 40vh 28px 1.5rem 28px;
   background-image: url("images/container-2.jpg");
@@ -53,6 +54,7 @@
   font-size: 25rem;
   padding-left: 5rem;
 }
+
 .ul-contacts {
   display: flex;
   justify-content: flex-end;
@@ -62,16 +64,28 @@
 .ul-contacts a:hover {
   color: var(--font);
 }
+
 .main-container-3 {
-  padding: 10vh 5vw;
-  margin: 20rem 0 20rem;
+  padding: 5vh 0;
+  margin: 15rem 0 15rem;
 }
 .container-box {
-  margin: 5rem 0;
+  margin: 5rem 5vw;
+  height: 70rem;
 }
-.project-container-info {
-  display: inline-block;
+.sub-container-3-box {
+  display: flex;
+  padding-top: 3rem;
 }
+.container-3-h3 {
+  text-align: center;
+  font-size: 5rem;
+}
+.project-container-info p {
+  font-size: 3rem;
+  padding-left: 3rem;
+}
+
 .highlight {
   color: var(--accent);
   font-size: 100%;

@@ -58,4 +58,5 @@ iframe {
   border: 1px solid var(--projects);
   min-width: 40rem;
   min-height: 40rem;
+  display: none;
 }

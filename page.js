@@ -1,21 +1,16 @@
-const ytbox = document.getElementById("box-1");
-const spbox = document.getElementById("box-2");
-const fccbox = document.getElementById("box-3");
+const ytBox = document.getElementById("box-1");
+const spBox = document.getElementById("box-2");
+const fccBox = document.getElementById("box-3");
+const ytContainerText = document.getElementById("project-container-info-a");
+const spContainerText = document.getElementById("project-container-info-b");
+const fccContainerText = document.getElementById("project-container-info-c");
 
-let toggle = true;
+let toggled = false;
 const containerEventAction = (container) => {
-  toggle = toggle ? false : true;
-  toggle === true
-    ? (container.style.display = "none")
-    : (container.style.display = "block");
+  toggled = !toggled;
+  container.style.display = toggled ? "none" : "block";
 };
 
-ytbox.addEventListener("click", function () {
-  containerEventAction();
-});
-spbox.addEventListener("click", function () {
-  containerEventAction();
-});
-fccbox.addEventListener("click", function () {
-  containerEventAction();
-});
+ytContainerText.addEventListener("click", () => containerEventAction(ytBox));
+spContainerText.addEventListener("click", () => containerEventAction(spBox));
+fccContainerText.addEventListener("click", () => containerEventAction(fccBox));
