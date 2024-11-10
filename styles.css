@@ -2,7 +2,6 @@
   --main: #f5ece5;
   --accent: #1c776d98;
   --font: #0c0404;
-  --projects: #212424;
 }
 * {
   margin: 0;
@@ -47,6 +46,11 @@ a:hover {
 img {
   height: auto;
   width: 100%;
+}
+svg {
+  height: 30rem;
+  width: 100%;
+  cursor: pointer;
 }
 .line {
   border: 1px solid var(--accent);

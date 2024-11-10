@@ -81,9 +81,14 @@
   text-align: center;
   font-size: 5rem;
 }
+.project-container-info {
+  margin: 0 auto;
+}
 .project-container-info p {
   font-size: 3rem;
-  padding-left: 3rem;
+  text-align: left;
+  max-width: 52rem;
+  cursor: pointer;
 }
 
 .highlight {
