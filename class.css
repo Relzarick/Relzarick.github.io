@@ -70,12 +70,12 @@
   margin: 15rem 0 15rem;
 }
 .container-box {
-  margin: 5rem 5vw;
+  margin: 15vh 5vw;
   height: 70rem;
 }
 .sub-container-3-box {
   display: flex;
-  padding-top: 3rem;
+  padding: 5rem 0;
 }
 .container-3-h3 {
   text-align: center;

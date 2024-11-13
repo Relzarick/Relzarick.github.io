@@ -8,39 +8,46 @@ const fccContainerText = document.getElementById("project-container-info-c");
 const burgerMenu = document.getElementById("burger-menu");
 const dropDown = document.getElementById("nav-dropdown-menu");
 
-let toggled = false;
-
-const renderKeys = (keys) => {
-  const key = keys;
-  const renderItems = [
-    { ytBox: "ytContainerText" },
-    { spBox: "spContainerText" },
-    { fccBox: "fccContainerText" },
-    { dropDown: "dropDown" },
+// function name tbd
+const elemSwitch = (key) => {
+  const domKeys = [
+    { ytBox: "project-container-info-a" },
+    { spBox: "project-container-info-b" },
+    { fccBox: "project-container-info-c" },
+    { dropDown: "nav-dropdown-menu" },
   ];
 
-  const foundItem = renderItems.find((item) => item.hasOwnProperty(key));
-  const containerDom = foundItem[key];
-  // containerDom doesnt === the dom element
-  console.log(containerDom === ytContainerText);
+  const foundItem = domKeys.find((item) => item.hasOwnProperty(key));
+  const containerDom = document.getElementById(foundItem[key]);
 
   if (foundItem) {
     containerDom.style.display = "none";
-    console.log(containerDom);
+    // add the elementappend function somewhere here
   }
 };
 
-const renderContainerItems = (key) => {
-  renderKeys(key);
-};
-
-const containerEventAction = (container, key) => {
-  toggled = !toggled;
-  container.style.display = toggled ? "none" : "block";
-  renderContainerItems(key);
+const elementAppend = () => {
+  // how do i know which sub container to append
+  const parentElement = document.querySelectorAll(".sub-container-3-box");
 };
 
 const navDisplay = () => {};
+
+// need work on burger menu toggle
+
+const renderContainerItems = (key) => {
+  elemSwitch(key);
+};
+
+const containerEventAction = (container, key) => {
+  let toggled = true;
+  toggled = !toggled;
+  container.style.display = toggled ? "none" : "block";
+
+  renderContainerItems(key);
+};
+
+// add color easteregg
 
 ytContainerText.addEventListener("click", () =>
   containerEventAction(ytBox, "ytBox")
