@@ -8,35 +8,44 @@ const fccContainerText = document.getElementById("project-container-info-c");
 const burgerMenu = document.getElementById("burger-menu");
 const dropDown = document.getElementById("nav-dropdown-menu");
 
-// function name tbd
-const elemSwitch = (key) => {
+//
+const containerDisplay = (key) => {
   const domKeys = [
-    { ytBox: "project-container-info-a" },
-    { spBox: "project-container-info-b" },
-    { fccBox: "project-container-info-c" },
+    { ytBox: "project-container-info-a", num: 0 },
+    { spBox: "project-container-info-b", num: 1 },
+    { fccBox: "project-container-info-c", num: 2 },
     { dropDown: "nav-dropdown-menu" },
   ];
 
   const foundItem = domKeys.find((item) => item.hasOwnProperty(key));
   const containerDom = document.getElementById(foundItem[key]);
 
+  // need to get the numbers from the object array
+  const containerNum = 1;
+
   if (foundItem) {
     containerDom.style.display = "none";
-    // add the elementappend function somewhere here
+  }
+
+  // need condidtion so i know to append
+  if (9) {
+    elementAppend(containerNum);
   }
 };
 
-const elementAppend = () => {
+const elementAppend = (num) => {
   // how do i know which sub container to append
   const parentElement = document.querySelectorAll(".sub-container-3-box");
 };
 
+//
 const navDisplay = () => {};
 
 // need work on burger menu toggle
-
+// give scroll animation
 const renderContainerItems = (key) => {
-  elemSwitch(key);
+  containerDisplay(key);
+  navDisplay();
 };
 
 const containerEventAction = (container, key) => {
