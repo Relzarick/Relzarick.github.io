@@ -6,35 +6,35 @@ const spContainerText = document.getElementById("project-container-info-b");
 const fccContainerText = document.getElementById("project-container-info-c");
 
 const burgerMenu = document.getElementById("burger-menu");
-const dropDown = document.getElementById("nav-dropdown-menu");
+const dropDown = document.getElementById("burger-menu");
 
 //
-const containerDisplay = (key) => {
+const containerDisplay = (key, num) => {
   const domKeys = [
     { ytBox: "project-container-info-a", num: 0 },
     { spBox: "project-container-info-b", num: 1 },
     { fccBox: "project-container-info-c", num: 2 },
-    { dropDown: "nav-dropdown-menu" },
+    { dropDown: "burger-menu" },
   ];
 
   const foundItem = domKeys.find((item) => item.hasOwnProperty(key));
+  // above gets me the object
   const containerDom = document.getElementById(foundItem[key]);
-
-  // need to get the numbers from the object array
-  const containerNum = 1;
+  const containerNum = domKeys[num].num;
 
   if (foundItem) {
+    // need nav to be seperate from this
+    // use !==
     containerDom.style.display = "none";
   }
 
-  // need condidtion so i know to append
+  // need condidtion so i know to append???
   if (9) {
     elementAppend(containerNum);
   }
 };
 
 const elementAppend = (num) => {
-  // how do i know which sub container to append
   const parentElement = document.querySelectorAll(".sub-container-3-box");
 };
 
@@ -43,29 +43,29 @@ const navDisplay = () => {};
 
 // need work on burger menu toggle
 // give scroll animation
-const renderContainerItems = (key) => {
-  containerDisplay(key);
+const renderContainerItems = (key, num) => {
+  containerDisplay(key, num);
   navDisplay();
 };
 
-const containerEventAction = (container, key) => {
+const containerEventAction = (container, key, num) => {
   let toggled = true;
   toggled = !toggled;
   container.style.display = toggled ? "none" : "block";
 
-  renderContainerItems(key);
+  renderContainerItems(key, num);
 };
 
 // add color easteregg
 
 ytContainerText.addEventListener("click", () =>
-  containerEventAction(ytBox, "ytBox")
+  containerEventAction(ytBox, "ytBox", 0)
 );
 spContainerText.addEventListener("click", () =>
-  containerEventAction(spBox, "spBox")
+  containerEventAction(spBox, "spBox", 1)
 );
 fccContainerText.addEventListener("click", () =>
-  containerEventAction(fccBox, "fccBox")
+  containerEventAction(fccBox, "fccBox", 2)
 );
 
 burgerMenu.addEventListener("click", () =>
