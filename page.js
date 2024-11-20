@@ -18,9 +18,10 @@ const containerDisplay = (key, num) => {
   ];
 
   const foundItem = domKeys.find((item) => item.hasOwnProperty(key));
-  // above gets me the object
+  //console.log(foundItem);
   const containerDom = document.getElementById(foundItem[key]);
   const containerNum = domKeys[num].num;
+  //console.log(containerNum);
 
   if (foundItem) {
     // need nav to be seperate from this
@@ -28,14 +29,24 @@ const containerDisplay = (key, num) => {
     containerDom.style.display = "none";
   }
 
-  // need condidtion so i know to append???
-  if (9) {
+  if (containerNum < 3) {
     elementAppend(containerNum);
   }
 };
 
 const elementAppend = (num) => {
+  const containerTexts = [
+    ["skills learned blah blah blah"],
+    ["playing around with js or bs"],
+    ["something abt getting introduced to js"],
+  ];
+  //console.log(containerTexts[num]);
+
   const parentElement = document.querySelectorAll(".sub-container-3-box");
+  //console.log(parentElement[num]);
+  parentElement[
+    num
+  ].innerHTML += `<p class= 'bullet-points'>${containerTexts[num]}</p>`;
 };
 
 //

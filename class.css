@@ -95,3 +95,9 @@
   color: var(--accent);
   font-size: 100%;
 }
+
+.bullet-points {
+  font-size: 3rem;
+  text-align: left;
+  max-width: 52rem;
+}
