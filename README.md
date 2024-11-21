@@ -10,7 +10,7 @@ fix the projects when minimized
 
 
 short term goal 
-need fix spacing for elem append 
+
 add the iframes for the rest
 
 
