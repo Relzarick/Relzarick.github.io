@@ -61,7 +61,7 @@ svg {
 iframe {
   border: 1px solid var(--font);
   border-radius: 0 2rem 0 2rem;
-  min-width: 45vw;
-  min-height: 62rem;
+  min-width: 60vw;
+  min-height: 68rem;
   display: none;
 }
