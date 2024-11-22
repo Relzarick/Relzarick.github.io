@@ -22,9 +22,10 @@ when hovering display animation of nav sliding out from the right side of the sc
 
 
 to consider 
+--
 => bullet point text to appear beside the iframe 
 give it .2 sec animation to appear (more natural??)
---
+
 
 
 
