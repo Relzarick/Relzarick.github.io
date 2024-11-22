@@ -8,7 +8,7 @@ fix the projects when minimized
 
 
 short term goals
-
+--
 add the iframes for side projects
 fix the fcc iframes
 
@@ -30,6 +30,7 @@ give it .2 sec animation to appear (more natural??)
 
 
 details 
+--
 make the apostrophe change the theme of the page
 
 
