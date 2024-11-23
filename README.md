@@ -30,10 +30,19 @@ give it .2 sec animation to appear (more natural??)
 
 
 details 
---
+==
 make the apostrophe change the theme of the page
 
 
 -- redo the nav into a hover to show hamburger icon
 
 ~~
+
+
+
+notes
+--
+hovering over the menu has to show the whole nav bar and removing cursor hides nav (animate it)
+i want the color to spread out from the icon but how?
+clicking on it makes nav perm clicking on a specific nav, hides the whole menu
+~~ animation of page scrolling up/down
