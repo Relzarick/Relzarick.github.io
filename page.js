@@ -6,7 +6,6 @@ const spContainerText = document.getElementById("project-container-info-b");
 const fccContainerText = document.getElementById("project-container-info-c");
 
 const burgerMenu = document.getElementById("burger-menu");
-const dropDown = document.getElementById("burger-menu");
 
 //
 const containerDisplay = (key, num) => {
@@ -14,22 +13,19 @@ const containerDisplay = (key, num) => {
     { ytBox: "project-container-info-a", num: 0 },
     { spBox: "project-container-info-b", num: 1 },
     { fccBox: "project-container-info-c", num: 2 },
-    { dropDown: "burger-menu" },
+    { burgerMenu: "burger-menu" },
   ];
 
   const foundItem = domKeys.find((item) => item.hasOwnProperty(key));
-  //console.log(foundItem);
+  console.log(foundItem[key]);
   const containerDom = document.getElementById(foundItem[key]);
   const containerNum = domKeys[num].num;
-  //console.log(containerNum);
+  console.log(containerDom);
 
-  if (foundItem) {
-    // need nav to be seperate from this
-    // use !==
+  // need nav to be seperate from this
+
+  if (containerNum <= 2) {
     containerDom.style.display = "none";
-  }
-
-  if (containerNum < 3) {
     elementAppend(containerNum);
   }
 };
@@ -52,11 +48,9 @@ const elementAppend = (num) => {
 //
 const navDisplay = () => {};
 
-// need work on burger menu toggle
-// give scroll animation
 const renderContainerItems = (key, num) => {
   containerDisplay(key, num);
-  navDisplay();
+  //navDisplay();
 };
 
 const containerEventAction = (container, key, num) => {
@@ -66,8 +60,6 @@ const containerEventAction = (container, key, num) => {
 
   renderContainerItems(key, num);
 };
-
-// add color easteregg
 
 ytContainerText.addEventListener("click", () =>
   containerEventAction(ytBox, "ytBox", 0)
@@ -80,5 +72,5 @@ fccContainerText.addEventListener("click", () =>
 );
 
 burgerMenu.addEventListener("click", () =>
-  containerEventAction(dropDown, "dropDown")
+  containerEventAction(burgerMenu, "burgerMenu")
 );

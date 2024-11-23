@@ -1,13 +1,32 @@
 .nav-div-container {
   width: 100%;
   height: 90px;
-  background-color: var(--accent);
   position: fixed;
   top: 0;
   display: flex;
   justify-content: space-between;
+  /*need change this justify content*/
+}
+
+#burger-menu {
+  height: inherit;
+  width: auto;
+  margin-right: 1.5rem;
+  backdrop-filter: blur(6px);
+  border-radius: 50%;
+}
+#burger-menu:hover {
+  cursor: pointer;
+}
+
+.nav-hidden {
+  display: none;
+}
+.nav-triggered {
+  background-color: var(--accent);
   backdrop-filter: blur(6px);
 }
+
 .name {
   display: flex;
   justify-content: start;
@@ -100,4 +119,5 @@
   font-size: 3rem;
   text-align: left;
   max-width: 52rem;
+  padding-left: 5vw;
 }
