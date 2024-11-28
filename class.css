@@ -5,24 +5,27 @@
   top: 0;
   display: flex;
   justify-content: space-between;
-  /*need change this justify content*/
 }
-
-#burger-menu {
+.nav-div-subcontainer {
+  display: flex;
+}
+.burger-menu {
   height: inherit;
   width: auto;
   margin-right: 1.5rem;
-  backdrop-filter: blur(6px);
+}
+.burger-filter {
+  backdrop-filter: blur(2px);
   border-radius: 50%;
 }
-#burger-menu:hover {
+.burger-menu:hover {
   cursor: pointer;
 }
 
-.nav-hidden {
+.nav-toggle {
   display: none;
 }
-.nav-triggered {
+.nav-background {
   background-color: var(--accent);
   backdrop-filter: blur(6px);
 }

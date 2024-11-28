@@ -19,16 +19,21 @@
   <body>
     <div class="nav-div-container">
       <div class="name nav-hidden">
-        <p class="nav-hidden">Jun Feng</p>
+        <p class="nav-toggle js-navbar">Jun Feng</p>
       </div>
 
-      <nav id="navbar" class="nav-hidden">
-        <a id="profile-link" href="#welcome-section">About</a>
-        <a id="profile-link" href="#projects">Projects</a>
-        <a id="profile-link" href="#contacts">Contact Me</a>
-      </nav>
+      <div class="nav-div-subcontainer">
+        <nav id="navbar" class="nav-toggle js-navbar">
+          <a id="profile-link" href="#welcome-section">About</a>
+          <a id="profile-link" href="#projects">Projects</a>
+          <a id="profile-link" href="#contacts">Contact Me</a>
+        </nav>
 
-      <img src="images/hamburger-menu.svg" id="burger-menu" />
+        <img
+          src="images/hamburger-menu.svg"
+          class="burger-menu burger-filter"
+        />
+      </div>
     </div>
 
     <main>
