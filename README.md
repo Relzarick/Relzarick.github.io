@@ -23,9 +23,6 @@ when hovering display animation of nav sliding out from the right side of the sc
 
 to consider 
 --
-=> bullet point text to appear beside the iframe 
-give it .2 sec animation to appear (more natural??)
-
 
 
 
@@ -41,6 +38,8 @@ notes
 --
 hovering over the menu has to show the whole nav bar and removing cursor hides nav (animate it)**
 i want the color to spread out from the icon but how?
+after mouse leaves nav send .5 timmer and remove display
 
-~~ animation of page scrolling up/down
+
+
 
