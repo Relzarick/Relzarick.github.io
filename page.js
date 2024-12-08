@@ -43,7 +43,7 @@ const elementAppend = (num) => {
 
   const parentElement = document.querySelectorAll(".sub-container-3-box");
   //console.log(parentElement[num]);
-  parentElement[num].innerHTML += `<ul class= "bullet-points">
+  parentElement[num].innerHTML += `<ul class= "bullet-points fade-in">
   <li class= "points">${containerTexts[num].pointOne}</li>
   <li class= "points">${containerTexts[num].pointTwo}</li>
   <li class= "points">${containerTexts[num].pointThree}</li>

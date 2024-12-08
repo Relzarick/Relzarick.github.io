@@ -76,3 +76,7 @@
     opacity: 1;
   }
 }
+
+.fade-in {
+  animation: fade-in 1.2s ease-in forwards;
+}
