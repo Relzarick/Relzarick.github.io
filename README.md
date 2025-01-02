@@ -10,7 +10,7 @@ fix the projects when minimized
 short term goals
 --
 
-fix the fcc iframes
+
 
 
 when hovering display animation of nav sliding out from the right side of the screen
