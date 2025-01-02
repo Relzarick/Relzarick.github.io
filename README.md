@@ -9,7 +9,7 @@ fix the projects when minimized
 
 short term goals
 --
-add the iframes for side projects
+
 fix the fcc iframes
 
 
