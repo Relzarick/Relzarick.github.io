@@ -1,6 +1,8 @@
 TODO LIST
 ==
 
+only viewable from a computer
+
 fix the projects when minimized 
 ** make accessible for mobile
 
@@ -36,9 +38,9 @@ make the apostrophe change the theme of the page
 
 notes
 --
-hovering over the menu has to show the whole nav bar and removing cursor hides nav (animate it)**
+
 i want the color to spread out from the icon but how?
-after mouse leaves nav send .5 timmer and remove display
+
 
 
 
