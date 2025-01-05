@@ -99,11 +99,9 @@ fccContainerText.addEventListener("click", () =>
   containerEventAction(fccBox, "fccBox", 2)
 );
 
-// idk how to not make mouseout not glitch the thingy
-// for now fix other stuff b4 trying mouseover
-burgerMenu.addEventListener("click", () =>
+burgerMenu.addEventListener("mouseenter", () =>
   containerEventAction(burgerMenu, "burgerMenu", 3)
 );
-// navSubContainer.addEventListener("mouseout", () =>
-//   containerEventAction(burgerMenu, "burgerMenu", 3)
-// );
+navSubContainer.addEventListener("mouseleave", () =>
+  containerEventAction(burgerMenu, "burgerMenu", 3)
+);
