@@ -1,8 +1,9 @@
 :root {
-  --main: #f5ece5;
-  --accent: #1c776d98;
+  --main: #e7e0d8;
+  --card: #f3f0e8;
+  --accent: #95a8ac;
   --font: #0c0404;
-  --accent2: #ff6f61;
+  --accent2: #dcb482;
 }
 * {
   margin: 0;
@@ -62,8 +63,9 @@ svg {
 
 iframe {
   border: 1px solid var(--font);
-  border-radius: 0 2rem 0 2rem;
-  min-width: 60vw;
-  min-height: 68rem;
+  border-radius: 2rem 0 0 2rem;
+  min-width: 50vw;
+  min-height: 30vh;
+  height: 100%;
   display: none;
 }

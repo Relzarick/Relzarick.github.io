@@ -94,14 +94,20 @@
 .container-box {
   margin: 15vh 5vw;
   height: 70rem;
+  background-color: var(--card);
+  border-radius: 2rem;
+  box-shadow: 5px 5px 10px 2px rgb(12 4 4 /0.1);
+  display: flex;
+  flex-direction: column;
 }
 .sub-container-3-box {
   display: flex;
-  padding: 5rem 0;
+  height: 100%;
 }
 .container-3-h3 {
   text-align: center;
   font-size: 5rem;
+  margin-bottom: 5rem;
 }
 .project-container-info {
   margin: 0 auto;
@@ -125,4 +131,7 @@
 .points {
   font-size: 3rem;
   padding-bottom: 2.5rem;
+}
+.h3-appended {
+  margin-bottom: 5rem;
 }

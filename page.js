@@ -39,11 +39,18 @@ const elementAppend = (num) => {
     },
   ];
 
+  const headerTexts = [
+    "YouTube Clone",
+    "Random side projects",
+    "Free Code Camp",
+  ];
+
   //console.log(containerTexts[0].pointOne);
 
   const parentElement = document.querySelectorAll(".sub-container-3-box");
   //console.log(parentElement[num]);
   parentElement[num].innerHTML += `<ul class= "bullet-points fade-in">
+  <h3 class = 'h3-appended'>${headerTexts[num]}</h3>
   <li class= "points">${containerTexts[num].pointOne}</li>
   <li class= "points">${containerTexts[num].pointTwo}</li>
   <li class= "points">${containerTexts[num].pointThree}</li>
@@ -60,6 +67,8 @@ const navDisplay = () => {
 };
 
 const renderContainerItems = (key, num) => {
+  const headerText = document.querySelectorAll(".container-3-h3");
+
   const domKeys = [
     { ytBox: "project-container-info-a", num: 0 },
     { spBox: "project-container-info-b", num: 1 },
@@ -73,7 +82,9 @@ const renderContainerItems = (key, num) => {
   const containerNum = domKeys[num].num;
   //console.log(containerNum);
 
+  // * This is to differentiate the nav or container elems
   if (containerNum <= 2) {
+    headerText[num].style.display = "none";
     containerDom.style.display = "none";
     elementAppend(containerNum);
   } else {
@@ -89,6 +100,8 @@ const containerEventAction = (container, key, num) => {
   renderContainerItems(key, num);
 };
 
+// * For the project containers
+
 ytContainerText.addEventListener("click", () =>
   containerEventAction(ytBox, "ytBox", 0)
 );
@@ -98,6 +111,8 @@ spContainerText.addEventListener("click", () =>
 fccContainerText.addEventListener("click", () =>
   containerEventAction(fccBox, "fccBox", 2)
 );
+
+// * Below  is for the Nav
 
 burgerMenu.addEventListener("mouseenter", () =>
   containerEventAction(burgerMenu, "burgerMenu", 3)
