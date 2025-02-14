@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="class.css" />
+    <link rel="stylesheet" href="media.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="nav-div-container">
+      <div class="name nav-toggle">
+        <p class="nav-toggle js-navbar">Jun Feng</p>
+      </div>
+
+      <div class="nav-div-subcontainer">
+        <nav id="navbar" class="nav-toggle js-navbar">
+          <a id="profile-link" href="#welcome-section">About</a>
+          <a id="profile-link" href="#projects">Projects</a>
+          <a id="profile-link" href="#contacts">Contact Me</a>
+        </nav>
+
+        <img
+          src="images/hamburger-menu.svg"
+          class="burger-menu burger-filter"
+        />
+      </div>
+    </div>
+
+    <main>
+      <section>
+        <div class="main-container-1">
+          <div class="h2-container">
+            <h2>Website</h2>
+            <h2>Developer<span class="highlight">.</span></h2>
+          </div>
+
+          <div class="intro-div">
+            <span class="wel-div-span">I am a aspiring web dev.</span>
+            <span class="wel-div-span">Passionate about </span>
+            <span class="wel-div-span">developing websites and</span>
+            <span class="wel-div-span text-start"
+              >learning more about website</span
+            >
+            <span class="wel-div-span">design and development.</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="main-container-2" id="welcome-section">
+          <h1>Hello, I am Jun Feng</h1>
+          <span class="about-sub-span">I love minimal designs and</span>
+          <span class="about-sub-span"
+            >hope that this page would be able to show off</span
+          >
+          <span class="about-sub-span"
+            >my projects and improvements as I learn and grow more.</span
+          >
+        </div>
+      </section>
+
+      <section>
+        <div class="main-container-3">
+          <div class="project-div" id="projects">
+            <div class="container-box">
+              <h3 class="container-3-h3">YouTube Clone</h3>
+              <div class="sub-container-3-box">
+                <iframe
+                  id="box-1"
+                  src="https://relzarick.github.io/YouTube-Clone/"
+                ></iframe>
+                <div
+                  class="project-container-info"
+                  id="project-container-info-a"
+                >
+                  <p>
+                    Building this project was a great way for me to get started
+                    on web development. I learned many essential skills such as
+                    basic layout structure and styling with CSS
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-box">
+              <h3 class="container-3-h3">Random side projects</h3>
+              <div class="sub-container-3-box">
+                <iframe
+                  id="box-2"
+                  src="https://relzarick.github.io/Side-project/"
+                ></iframe>
+                <div
+                  class="project-container-info"
+                  id="project-container-info-b"
+                >
+                  <p>
+                    I started learning JavaScript through online guides, and
+                    working on small projects showed me how complex it could be.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-box">
+              <h3 class="container-3-h3">Free Code Camp</h3>
+              <div class="sub-container-3-box">
+                <iframe
+                  id="box-3"
+                  src="https://relzarick.github.io/FCC-projects/"
+                ></iframe>
+                <div
+                  class="project-container-info"
+                  id="project-container-info-c"
+                >
+                  <p>
+                    The courses provided a solid understanding of key
+                    programming concepts and allowed me to get comfortable and
+                    more in-depth with functions and objects.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="line"></div>
+
+      <div id="contacts">
+        <div class="connect">
+          <h1>Let's</h1>
+          <h1>Connect</h1>
+        </div>
+
+        <ul class="ul-contacts">
+          <li>
+            <a href="https://www.linkedin.com/in/jun-feng-n-a138a1298/"
+              >Linkedin</a
+            >
+          </li>
+          <li><a href="https://wa.me/6593915384">Whatsapp</a></li>
+          <li><a href="https://github.com/projects">Github</a></li>
+        </ul>
+      </div>
+    </main>
+    <script src="page.js"></script>
+  </body>
+</html>

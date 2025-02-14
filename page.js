@@ -10,7 +10,8 @@ const navContents = document.querySelectorAll(".js-navbar");
 const navContainer = document.querySelector(".nav-div-container");
 const navSubContainer = document.querySelector(".nav-div-subcontainer");
 
-//
+// TODO
+alert("best viewed on a desktop");
 
 const elementAppend = (num) => {
   const containerTexts = [
