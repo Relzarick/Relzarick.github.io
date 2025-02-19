@@ -59,9 +59,9 @@
 .main-container-2 {
   padding: 40vh 28px 1.5rem 28px;
   background-image: url("images/container-2.jpg");
-  animation: fade-in ease 3.5s;
   background-repeat: no-repeat;
   background-size: cover;
+  animation: fade-in ease 3s;
 }
 .main-container-2 h1,
 .main-container-2 span {
@@ -74,7 +74,7 @@
 }
 .connect h1 {
   font-size: 25rem;
-  padding-left: 5rem;
+  padding-left: clamp(2vw, 5rem, 5rem);
 }
 
 .ul-contacts {
