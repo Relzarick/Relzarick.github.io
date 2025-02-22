@@ -8,25 +8,31 @@ const renderContainerItems = (id, container) => {
     p4: "<div class='v-line fade-in'><p class='points fade-in'>Became familiar with scope, closures, and how they affect variable access and function execution. Explored objects and arrays in-depth, understanding how to store and manipulate data.</p>",
   };
 
-  // console.log(domKeys[id]);
+  console.log(domKeys[id]);
+  console.log(container);
+
   container.innerHTML = "";
   container.innerHTML += domKeys[id];
-};
-
-const containerEventAction = (id, container) => {
-  let toggled = true;
-  toggled = !toggled;
-  //container.style.display = toggled ? "block" : "none";
-
-  renderContainerItems(id, container);
 };
 
 projectContainer.addEventListener("click", (event) => {
   // * Finds the nearest ancestor element
   const container = event.target.closest(".inner-sub-c3");
 
-  if (event.target && event.target.matches(".inner-sub-c3a p")) {
+  if (event.target && event.target.closest(".inner-sub-c3a p")) {
     const paragraph = event.target.id;
-    containerEventAction(paragraph, container);
+    renderContainerItems(paragraph, container);
   }
 });
+
+// ! Below is used for display exclusive content
+const pc = document.querySelector(".pc");
+const mobile = document.querySelector(".phone");
+const screenWidth = window.matchMedia("(max-width: 460px)");
+if (screenWidth.matches) {
+  pc.style.display = "none";
+  mobile.style.display = "block";
+} else {
+  mobile.style.display = "none";
+  pc.style.display = "block";
+}

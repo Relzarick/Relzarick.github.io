@@ -14,12 +14,12 @@
 .navbar-sub-container {
   display: flex;
   background-color: var(--gray);
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 5px;
 }
 .navbar-icon {
   border: 1px solid #4e4e4e;
-  border-radius: 5px;
+  border-radius: 12px;
   margin: 0 1.5px;
   padding: 5px;
 
@@ -30,7 +30,6 @@
 }
 .nb-a {
   border: none;
-  padding-right: 2px;
 }
 .nb-a p {
   font-size: 3rem;

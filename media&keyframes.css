@@ -36,6 +36,15 @@
 
 /* media for small phones*/
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+  /* NAVBAR STYLES */
+  .navbar-icon {
+    margin: 0 1.5px;
+    padding: 5px;
+  }
+  nav a {
+    font-size: 1.5rem;
+  }
+
   .main-container-1 {
     display: flex;
     flex-wrap: wrap;
