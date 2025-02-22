@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="class.css" />
-    <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="class&id.css" />
+    <link rel="stylesheet" href="media&keyframes.css" />
+
+    <link href="https://fonts.cdnfonts.com/css/apercu-pro" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,146 +18,179 @@
       rel="stylesheet"
     />
   </head>
-
   <body>
-    <div class="nav-div-container">
-      <div class="name nav-toggle">
-        <p class="nav-toggle js-navbar">Jun Feng</p>
-      </div>
+    <div class="navbar-main-container">
+      <nav id="navbar" class="js-navbar">
+        <div class="navbar-icon nb-a"><p>Jun Feng</p></div>
 
-      <div class="nav-div-subcontainer">
-        <nav id="navbar" class="nav-toggle js-navbar">
-          <a id="profile-link" href="#welcome-section">About</a>
-          <a id="profile-link" href="#projects">Projects</a>
-          <a id="profile-link" href="#contacts">Contact Me</a>
-        </nav>
-
-        <img
-          src="images/hamburger-menu.svg"
-          class="burger-menu burger-filter"
-        />
-      </div>
+        <div class="navbar-sub-container">
+          <div class="navbar-icon nb-b"><a href="#welcome">About</a></div>
+          <div class="navbar-icon nb-b"><a href="#projects">Projects</a></div>
+          <div class="navbar-icon nb-b nb-b1">
+            <a href="#contacts">Contact Me</a>
+          </div>
+        </div>
+      </nav>
     </div>
 
     <main>
-      <section>
+      <section id="welcome">
         <div class="main-container-1">
-          <div class="h2-container">
-            <h2 class="fade-in">Website</h2>
-            <h2 class="fade-in">Developer<span class="highlight">.</span></h2>
+          <div class="sub-c1a fade-in">
+            <h1>Website</h1>
+            <h1>Developer<span class="highlight">.</span></h1>
           </div>
 
-          <div class="intro-div fade-in">
-            <span class="wel-div-span">Aspiring web dev.&nbsp</span>
-            <span class="wel-div-span">Passionate about&nbsp</span>
-            <span class="wel-div-span">developing websites,</span>
-            <span class="wel-div-span text-start"
-              >learning web design, development&nbsp</span
+          <div class="fade-in">
+            <span class="span-wrap sp1"
+              >Aspiring web dev. Passionate about developing websites, learning
+              web design, and Java Script.</span
             >
-            <span class="wel-div-span">and Java Script.</span>
           </div>
         </div>
       </section>
 
       <section>
-        <div class="main-container-2" id="welcome-section">
-          <h1>Hi, I am Jun Feng</h1>
-          <span class="about-sub-span">I love minimal designs and</span>
-          <span class="about-sub-span"
-            >hope that this page would be able to show off</span
-          >
-          <span class="about-sub-span"
-            >some of my projects and things I have learnt.</span
-          >
-        </div>
-      </section>
-
-      <section>
-        <div class="main-container-3">
-          <div class="project-div" id="projects">
-            <div class="container-box">
-              <h3 class="container-3-h3">YouTube Clone</h3>
-              <div class="sub-container-3-box">
-                <iframe
-                  id="box-1"
-                  src="https://relzarick.github.io/YouTube-Clone/"
-                ></iframe>
-                <div
-                  class="project-container-info"
-                  id="project-container-info-a"
-                >
-                  <p class="auto-show">
-                    Building this project was a great way for me to get started
-                    on web development. I learned many essential skills such as
-                    basic layout structure and styling with CSS
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="container-box">
-              <h3 class="container-3-h3">Random side projects</h3>
-              <div class="sub-container-3-box">
-                <iframe
-                  id="box-2"
-                  src="https://relzarick.github.io/Side-project/"
-                ></iframe>
-                <div
-                  class="project-container-info"
-                  id="project-container-info-b"
-                >
-                  <p class="auto-show">
-                    I started learning JavaScript through online guides, and
-                    working on small projects showed me how complex it could be.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="container-box">
-              <h3 class="container-3-h3">Free Code Camp</h3>
-              <div class="sub-container-3-box">
-                <iframe
-                  id="box-3"
-                  src="https://relzarick.github.io/FCC-projects/"
-                ></iframe>
-                <div
-                  class="project-container-info"
-                  id="project-container-info-c"
-                >
-                  <p class="auto-show">
-                    The courses provided a solid understanding of key
-                    programming concepts and allowed me to get comfortable and
-                    more in-depth with functions and objects.
-                  </p>
-                </div>
-              </div>
-            </div>
+        <div class="main-container-2">
+          <img src="images/container-2.jpg" />
+          <div class="sub-c2">
+            <h2>Hi, I'm JF</h2>
+            <span class="span-wrap"
+              >I love minimal designs and hope that this page would be able to
+              show off some of my projects and things I have learnt.</span
+            >
           </div>
         </div>
       </section>
 
-      <div class="line"></div>
+      <div class="bottom-wrapper">
+        <section id="projects">
+          <div class="main-container-3">
+            <!--  -->
 
-      <div id="contacts">
-        <div class="connect">
-          <h1>Let's</h1>
-          <h1>Connect</h1>
-        </div>
+            <div class="sub-c3">
+              <div class="sub-c3a">
+                <div class="c3-image">
+                  <iframe
+                    src="https://relzarick.github.io/YouTube-Clone/"
+                  ></iframe>
+                </div>
 
-        <ul class="ul-contacts">
-          <li>
-            <a href="https://www.linkedin.com/in/jun-feng-n-a138a1298/"
-              >Linkedin</a
-            >
-          </li>
-          <li>
-            <a href="https://wa.me/6593915384">Whatsapp</a>
-          </li>
-          <li><a href="https://github.com/projects">Github</a></li>
-        </ul>
+                <div class="inner-sub-c3">
+                  <img src="images/YouTube.svg" />
+                  <div class="v-line"></div>
+                  <div class="inner-sub-c3a">
+                    <h3>YouTube Clone</h3>
+                    <p id="p1">
+                      Working on this was a great way for me to get started on
+                      web development. I learnt many essential skills such as
+                      basic layout structure and styling with CSS.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sub-c3">
+              <div class="sub-c3a">
+                <div class="c3-image">
+                  <iframe
+                    src="https://relzarick.github.io/rockPaperScissors/"
+                  ></iframe>
+                </div>
+
+                <div class="inner-sub-c3">
+                  <img src="images/rps.svg" />
+                  <div class="v-line"></div>
+                  <div class="inner-sub-c3a">
+                    <h3>Rock Paper Scissors</h3>
+                    <p id="p2">
+                      This was a small starter project that every beginner has
+                      to attempt before delving deeper into programming. The
+                      goal of this was to familiarize myself with basic coding
+                      concepts and practices.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sub-c3">
+              <div class="sub-c3a">
+                <div class="c3-image">
+                  <iframe
+                    src="https://relzarick.github.io/palindrome/"
+                  ></iframe>
+                </div>
+
+                <div class="inner-sub-c3">
+                  <img src="images/Js Mastery.svg" />
+                  <div class="v-line"></div>
+                  <div class="inner-sub-c3a">
+                    <h3>Palindrome checker</h3>
+                    <p id="p3">
+                      I continued learning JavaScript through online guides, and
+                      working on small projects to build on my fundamentals.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sub-c3">
+              <div class="sub-c3a">
+                <div class="c3-image">
+                  <iframe
+                    src="https://relzarick.github.io/cash-Register/"
+                  ></iframe>
+                </div>
+
+                <div class="inner-sub-c3">
+                  <img src="images/cash.svg" />
+                  <div class="v-line"></div>
+                  <div class="inner-sub-c3a">
+                    <h3>Cash Register</h3>
+                    <p id="p4">
+                      Working on this, provided me with a deeper level
+                      understanding of core concepts and allowed me refine my
+                      foundations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="line"></div>
+
+        <section id="contacts">
+          <div class="info-container">
+            <div class="info-container-1">
+              <h1>Let's</h1>
+              <h1>Connect</h1>
+              <ul class="info-container-ul">
+                <li>
+                  <a
+                    class="ul-a"
+                    href="https://www.linkedin.com/in/jun-feng-n-a138a1298/"
+                    >Linkedin</a
+                  >
+                </li>
+                <li>
+                  <a class="ul-a" href="https://wa.me/6593915384">Whatsapp</a>
+                </li>
+                <li>
+                  <a class="ul-a" href="https://github.com/projects">Github</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </div>
+
+      <!--  -->
     </main>
-    <script src="page.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
