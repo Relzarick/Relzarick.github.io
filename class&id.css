@@ -160,6 +160,7 @@
 }
 .bottom-wrapper {
   background-color: var(--background);
+  width: 100%;
 }
 .points {
   margin-left: 1vw;
