@@ -2,11 +2,11 @@
 .navbar-main-container {
   background-color: rgba(33, 33, 33, 80%);
   border-radius: 11px;
-  padding: min(6px, 8px);
+  padding: 6px;
   max-width: fit-content;
 
   position: fixed;
-  top: 20px;
+  top: 2%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 99;
@@ -53,10 +53,6 @@
 .sub-c1a {
   margin-left: 2.5vw;
 }
-.highlight {
-  color: #95a8ac;
-  font-size: 10rem;
-}
 .sp1 {
   margin-right: 2.5vw;
 }
@@ -89,6 +85,8 @@
   justify-content: center;
   gap: 2vw;
 }
+
+/* This effects the containers*/
 .sub-c3 {
   background-color: var(--black);
   border-radius: 11px;
@@ -99,13 +97,13 @@
   display: flex;
   color: var(--white);
 }
+/* This is needed to maintain the 2 by 2 for some reason */
 .sub-c3a {
-  padding: 3vh 3vh 0;
+  padding: 3vh 3vh 12vh;
 }
-.c3-image {
-  background-color: var(--gray);
-  border-radius: 12px;
+/*This effects the containers*/
 
+.c3-image {
   height: 60%;
 }
 .inner-sub-c3 {
@@ -125,8 +123,7 @@
 /* info container */
 
 .info-container-1 h1 {
-  margin-left: 2.5vw;
-  font-size: clamp(8rem, 18vh, 20vh);
+  font-size: clamp(8rem, 18vw, 20rem);
   font-family: "Times New Roman";
 }
 .info-container-ul {
@@ -153,16 +150,17 @@
 }
 
 .span-wrap {
-  white-space: normal;
-  display: inline-block;
   font-size: min(2rem, 8vw);
-  max-height: min(15rem, 20vh);
 }
 .bottom-wrapper {
   background-color: var(--background);
-  width: 100%;
+  width: 100vw;
 }
 .points {
   margin-left: 1vw;
   text-align: left;
+}
+.highlight {
+  color: #95a8ac;
+  font-size: clamp(5rem, 15vw, 15rem);
 }

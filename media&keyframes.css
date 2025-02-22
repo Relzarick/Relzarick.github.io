@@ -34,8 +34,29 @@
   border: 1px solid white;
 }
 
-/* media for phones*/
-@media only screen and (min-width: 360px) and (max-width: 428px) {
-  /* .navbar-main-container a {
-  } */
+/* media for small phones*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .main-container-1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sw-1 {
+    display: inline-block;
+
+    margin: 5vw 0 0 5vw;
+  }
+
+  /* CONTAINER THREE*/
+  .main-container-3 {
+    flex-direction: column;
+  }
+  /* Can't fit this on mobile bruh*/
+  .inner-sub-c3 img {
+    display: none;
+  }
+  .v-line {
+    display: none;
+  }
 }
+
+/* media for small phones*/

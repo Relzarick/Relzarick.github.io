@@ -19,18 +19,20 @@
 body {
   background-color: var(--green);
   color: var(--font);
+  max-width: none;
 }
 main {
-  margin-top: clamp(3vh, 12vh, 15vh);
+  margin-top: 12vh;
 }
 h1 {
-  font-size: clamp(5rem, 12vh, 15vh);
+  font-size: clamp(5rem, 15vw, 15rem);
+  margin-left: 2.5vw;
 }
 h2 {
-  font-size: clamp(3rem, 10vh, 12vh);
+  font-size: clamp(3rem, 10vw, 12rem);
 }
 h3 {
-  font-size: clamp(2rem, 2.5vh, 4vh);
+  font-size: clamp(2rem, 2.5vw, 4rem);
   margin: 1vh auto 3vh;
 }
 p {
@@ -48,8 +50,8 @@ nav {
   color: var(--background);
 }
 img {
-  height: clamp(100px, 100%, 100%);
-  width: clamp(100px, 100%, 100%);
+  height: 100%;
+  width: 100%;
   border-radius: 12px;
 }
 iframe {
