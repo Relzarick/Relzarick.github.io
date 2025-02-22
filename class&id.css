@@ -1,4 +1,4 @@
-/* navbar styles */
+/** navbar styles */
 .navbar-main-container {
   background-color: rgba(33, 33, 33, 80%);
   border-radius: 11px;
@@ -52,7 +52,7 @@
 .sub-c1a {
   margin-left: 2.5vw;
 }
-.sp1 {
+.sw-1 {
   margin-right: 2.5vw;
 }
 
@@ -74,7 +74,7 @@
   position: absolute;
 }
 
-/* main container three styles */
+/** main container three styles */
 
 .main-container-3 {
   margin: 0 2vw 10vh;
@@ -85,7 +85,7 @@
   gap: 2vw;
 }
 
-/* This effects the containers*/
+/*! This effects the containers*/
 .sub-c3 {
   background-color: var(--black);
   border-radius: 11px;
@@ -96,11 +96,11 @@
   display: flex;
   color: var(--white);
 }
-/* This is needed to maintain the 2 by 2 for some reason */
+/** This is needed to maintain the 2 by 2 for some reason */
 .sub-c3a {
   padding: 3vh 3vh 12vh;
 }
-/*This effects the containers*/
+/*!This effects the containers*/
 
 .c3-image {
   height: 60%;
@@ -119,7 +119,7 @@
   cursor: pointer;
 }
 
-/* info container */
+/** info container */
 
 .info-container-1 h1 {
   font-size: clamp(8rem, 18vw, 20rem);
@@ -129,13 +129,15 @@
   display: flex;
   justify-content: flex-end;
   list-style: none;
+  padding-bottom: 4px;
 }
 .ul-a {
   color: var(--font);
-  padding: 0 min(2vw, 3rem);
+  margin: 0 min(2vw, 3rem);
+  position: relative;
 }
 
-/* Misc*/
+/** Misc*/
 
 .line {
   border: 1px solid var(--orange);
@@ -148,17 +150,11 @@
   margin: 0 1vw;
 }
 
-.span-wrap {
-  font-size: min(2rem, 8vw);
-}
 .bottom-wrapper {
   background-color: var(--background);
   width: 100vw;
 }
-.points {
-  margin-left: 1vw;
-  text-align: left;
-}
+
 .highlight {
   color: #95a8ac;
   font-size: clamp(5rem, 15vw, 15rem);

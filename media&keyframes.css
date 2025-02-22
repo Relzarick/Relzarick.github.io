@@ -1,3 +1,4 @@
+/**  FADE ANIMATION  */
 .fade-in {
   animation: fadeInAnimation 1.2s ease-in forwards;
 }
@@ -12,7 +13,7 @@
   }
 }
 
-/* SCROLL ANIMATIONS */
+/** SCROLL ANIMATIONS */
 .auto-show {
   animation: autoShowAnimation both;
   animation-timeline: view(70% 5%);
@@ -29,14 +30,29 @@
   }
 }
 
-/* HOVER ANIMATIONS */
+/** HOVER ANIMATIONS */
 .nb-b:hover {
   border: 1px solid white;
+  /* todo DO the cirle animation  */
 }
 
-/* media for small phones*/
+/** AFTER EFFECTS */
+.ul-a:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+
+  animation: fadeInAnimation 0.35s ease-in forwards;
+  background-image: linear-gradient(151deg, #faaca8 10%, #ddd6f3 90%);
+  border-radius: 12px;
+}
+
+/** media for small phones*/
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  /* NAVBAR STYLES */
+  /** NAVBAR STYLES */
   .navbar-icon {
     margin: 0 1.5px;
     padding: 5px;
@@ -55,11 +71,22 @@
     margin: 5vw 0 0 5vw;
   }
 
-  /* CONTAINER THREE*/
+  /** CONTAINER THREE*/
   .main-container-3 {
     flex-direction: column;
+    gap: 10vw;
   }
-  /* Can't fit this on mobile bruh*/
+  .sub-c3a {
+    height: 110rem;
+    padding: 0;
+  }
+  .inner-sub-c3a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /*! Can't fit this on mobile bruh*/
   .inner-sub-c3 img {
     display: none;
   }
