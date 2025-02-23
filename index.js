@@ -32,7 +32,7 @@ const screenWidth = window.matchMedia("(max-width: 460px)");
 
 // ? This is for the popup
 const popUpDiv = document.querySelector(".pop-up");
-const returnImg = document.querySelector("#return");
+const returnImg = document.querySelector(".return");
 
 if (screenWidth.matches) {
   pc.style.display = "none";
