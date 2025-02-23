@@ -29,14 +29,19 @@ projectContainer.addEventListener("click", (event) => {
 const pc = document.querySelector(".pc");
 const mobile = document.querySelector(".phone");
 const screenWidth = window.matchMedia("(max-width: 460px)");
-console.log(screenWidth);
 
-const popUp = () => {};
+// ? This is for the popup
+const popUpDiv = document.querySelector(".pop-up");
+const returnImg = document.querySelector("#return");
 
 if (screenWidth.matches) {
   pc.style.display = "none";
   mobile.style.display = "block";
-  popUp();
+  popUpDiv.style.display = "block";
+
+  returnImg.addEventListener("click", () => {
+    popUpDiv.style.display = "none";
+  });
 } else {
   mobile.style.display = "none";
   pc.style.display = "block";
