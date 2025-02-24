@@ -208,8 +208,7 @@
   right: 2vw;
 }
 .slider {
-  border: 1px solid red;
-  height: 20vh;
+  height: 20rem;
   width: 100;
   position: relative;
   white-space: nowrap;
@@ -219,6 +218,7 @@
   height: 100%;
   margin: 0;
   position: absolute;
-  animation: auto-slide 10s linear infinite;
-  animation-delay: calc((10s / 2) * (var(--position) - 1));
+  left: 100%;
+  animation: auto-slide 15s linear infinite;
+  animation-delay: calc((15s / 2) * (var(--position) - 1));
 }
