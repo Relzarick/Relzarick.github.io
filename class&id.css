@@ -72,6 +72,8 @@
 }
 .sub-c2 {
   position: absolute;
+  bottom: 10vw;
+  left: 2vw;
 }
 
 /** main container three styles */
@@ -100,6 +102,9 @@
 .sub-c3a {
   padding: 3vh 3vh 12vh;
 }
+.inner-sub-c3 img {
+  margin-top: 2vw;
+}
 /*!This effects the containers*/
 
 .c3-image {
@@ -114,9 +119,17 @@
 }
 .inner-sub-c3a {
   height: 100%;
+  position: relative;
 }
 .inner-sub-c3a p {
   cursor: pointer;
+}
+
+/** MAIN CONTAINER FOUR STYLES */
+.main-container-4 {
+  width: 100vw;
+  display: flex;
+  margin: 0 0 10vh;
 }
 
 /** info container */
@@ -179,4 +192,24 @@
   position: absolute;
   right: 4vw;
   bottom: 3vw;
+}
+.next-icon {
+  display: inline-block;
+  border: solid var(--white);
+  border-width: 0 2px 2px 0;
+  padding: 10px;
+  transform: rotate(-45deg);
+  margin: 20px;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 2vw;
+  right: 2vw;
+}
+.slider {
+  width: 100%;
+  height: 20vh;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
 }

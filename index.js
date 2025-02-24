@@ -19,30 +19,35 @@ projectContainer.addEventListener("click", (event) => {
   // * Finds the nearest ancestor element
   const container = event.target.closest(".inner-sub-c3");
 
-  if (event.target && event.target.closest(".inner-sub-c3a p")) {
+  if (
+    (event.target && event.target.closest(".inner-sub-c3a p")) ||
+    event.target.closest(".next-icon")
+  ) {
     const paragraph = event.target.id;
     renderContainerItems(paragraph, container);
   }
 });
 
 // ! Below is used for display exclusive content
-const pc = document.querySelector(".pc");
-const mobile = document.querySelector(".phone");
+const pc = document.querySelectorAll(".pc");
+const mobile = document.querySelectorAll(".phone");
 const screenWidth = window.matchMedia("(max-width: 460px)");
 
-// ? This is for the popup
-const popUpDiv = document.querySelector(".pop-up");
+// ? This is for the POPUP
 const returnImg = document.querySelector(".return");
+const popUp = document.querySelector(".pop-up");
 
 if (screenWidth.matches) {
-  pc.style.display = "none";
-  mobile.style.display = "block";
-  popUpDiv.style.display = "block";
+  pc.forEach((pc) => (pc.style.display = "none"));
+  mobile.forEach((mobile) => {
+    mobile.style.display = "block";
+  });
 
+  // * POPUP
   returnImg.addEventListener("click", () => {
-    popUpDiv.style.display = "none";
+    popUp.style.display = "none";
   });
 } else {
-  mobile.style.display = "none";
-  pc.style.display = "block";
+  mobile.forEach((mobile) => (mobile.style.display = "none"));
+  pc.forEach((pc) => (pc.style.display = "block"));
 }
