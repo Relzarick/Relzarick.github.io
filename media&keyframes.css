@@ -40,10 +40,13 @@
   }
 }
 
-/** HOVER ANIMATIONS */
+/** HOVER EFFECTS */
 .nb-b:hover {
-  border: 1px solid white;
+  border: 2px solid var(--white);
   /* todo DO the cirle animation  */
+}
+.nb-b1 a:hover {
+  color: var(--white);
 }
 
 /** AFTER EFFECTS */
