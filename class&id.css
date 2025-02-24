@@ -195,7 +195,7 @@
 }
 .next-icon {
   display: inline-block;
-  border: solid var(--font);
+  border: solid var(--white);
   border-width: 0 2px 2px 0;
   padding: 10px;
   transform: rotate(-45deg);
