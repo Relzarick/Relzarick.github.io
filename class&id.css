@@ -64,7 +64,6 @@
   /* br, tl, tr, bl*/
   text-shadow: 2px 2px 0px black, -2px -2px 0px black, 2px -2px 0px black,
     -2px 2px 0px black;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -196,7 +195,7 @@
 }
 .next-icon {
   display: inline-block;
-  border: solid var(--white);
+  border: solid var(--font);
   border-width: 0 2px 2px 0;
   padding: 10px;
   transform: rotate(-45deg);
@@ -207,6 +206,7 @@
   bottom: 2vw;
   right: 2vw;
 }
+
 .slider {
   height: 20rem;
   width: 100;
