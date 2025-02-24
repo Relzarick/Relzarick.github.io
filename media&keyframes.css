@@ -31,13 +31,6 @@
 }
 
 /** SLIDER ANIMATIONS */
-.slider h1 {
-  margin: 0;
-  white-space: nowrap;
-
-  position: absolute;
-  animation: auto-slide 10s linear infinite;
-}
 @keyframes auto-slide {
   from {
     left: 100%;
