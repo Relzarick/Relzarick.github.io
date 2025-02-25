@@ -237,20 +237,21 @@
   height: 50vh;
   width: max-content;
   position: sticky;
-  top: 0;
+  top: 25%;
   left: 0;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 2vw;
-  flex-basis: 44%;
+  flex-basis: 43%;
 }
 .stack-right {
   height: 50vh;
+  width: max-content;
   position: sticky;
-  top: 0;
-  flex-basis: 56%;
+  top: 25%;
+  flex-basis: 57%;
 }
 
 .cards {
