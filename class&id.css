@@ -273,3 +273,12 @@
 .remove {
   transform-origin: bottom left;
 }
+.cards:nth-child(1) {
+  background: linear-gradient(to right, #e34c26, #1572b6);
+}
+.cards:nth-child(2) {
+  background-color: #f7df1e;
+}
+.cards:nth-child(3) {
+  background-color: #3776ab;
+}
