@@ -43,7 +43,7 @@ if (screenWidth.matches) {
     mobile.style.display = "block";
   });
 
-  // * POPUP
+  // ! POPUP
   returnImg.addEventListener("click", () => {
     popUp.style.display = "none";
   });
@@ -51,3 +51,37 @@ if (screenWidth.matches) {
   mobile.forEach((mobile) => (mobile.style.display = "none"));
   pc.forEach((pc) => (pc.style.display = "block"));
 }
+
+//! CARDS
+
+const cards = document.querySelectorAll(".cards");
+const cardsStack = document.querySelector(".cards-stack");
+
+const rotateCards = () => {
+  let angle = 0;
+
+  cards.forEach((card, i) => {
+    if (card.classList.contains("remove")) {
+      card.style.transform = `translateY(-120vh) rotate(-48deg)`;
+    } else {
+      card.style.transform = `rotate(${angle}deg)`;
+      angle -= 10;
+      card.style.zIndex = cards.length - i;
+    }
+  });
+};
+
+window.addEventListener("scroll", () => {
+  const distance = window.innerHeight / 2;
+  const topval = cardsStack.getBoundingClientRect().top;
+  let index = Math.floor(-1 * (topval / distance + 1));
+
+  for (i = 0; i < cards.length; i++) {
+    if (i <= index) {
+      cards[i].classList.add("remove");
+    } else {
+      cards[i].classList.remove("remove");
+    }
+  }
+  rotateCards();
+});

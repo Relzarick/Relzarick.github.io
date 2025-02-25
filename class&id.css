@@ -41,7 +41,7 @@
   color: var(--font);
 }
 
-/* main container one styles */
+/*! main container one styles */
 
 .main-container-1 {
   display: flex;
@@ -56,11 +56,11 @@
   margin-right: 2.5vw;
 }
 
-/* main container two styles */
+/*! main container two styles */
 
 .main-container-2 {
   color: var(--background);
-  margin: 0 2vw 10vh;
+  margin: 0 2vw 11vh;
   /* br, tl, tr, bl*/
   text-shadow: 2px 2px 0px black, -2px -2px 0px black, 2px -2px 0px black,
     -2px 2px 0px black;
@@ -75,10 +75,9 @@
   left: 2vw;
 }
 
-/** main container three styles */
+/*! main container three styles */
 .main-container-3 {
   margin: 0 2vw 10vh;
-  padding-top: 10vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -103,7 +102,7 @@
 .inner-sub-c3 img {
   margin-top: 2vw;
 }
-/*!This effects the containers*/
+/*! ENDS HERE*/
 
 .c3-image {
   height: 60%;
@@ -123,13 +122,13 @@
   cursor: pointer;
 }
 
-/** MAIN CONTAINER FOUR STYLES */
+/*! MAIN CONTAINER FOUR STYLES */
 .main-container-4 {
   display: flex;
   margin: 0 0 10vh;
 }
 
-/** info container */
+/*! info container */
 .info-container {
   margin: 0 2vw;
 }
@@ -149,7 +148,7 @@
   position: relative;
 }
 
-/** Misc*/
+/*! Misc*/
 
 .line {
   border: 1px solid var(--orange);
@@ -226,4 +225,51 @@
 .item-highlight {
   font-size: inherit;
   color: #57aba4;
+}
+/*! CARD STACK */
+.cards-stack {
+  margin: 0 2vw 0;
+  height: 200vh;
+  display: flex;
+
+  position: relative;
+}
+.stack-left {
+  height: 50vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2vw;
+  flex-basis: 50%;
+}
+.stack-right {
+  height: 50vh;
+  position: sticky;
+  top: 0;
+  flex-basis: 50%;
+}
+
+.cards {
+  height: 350px;
+  width: 350px;
+  border-radius: 25px;
+  font-size: clamp(10px, clamp(20px, 20vw, 30px), 40px);
+  font-weight: 700;
+
+  transition: 0.5s ease-in-out;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: calc(50% - 175px);
+  left: calc(50% - 175px);
+}
+.remove {
+  transform-origin: bottom left;
 }
