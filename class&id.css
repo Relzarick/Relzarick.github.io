@@ -228,7 +228,6 @@
 }
 /*! CARD STACK */
 .cards-stack {
-  margin: 0 2vw 0;
   height: 200vh;
   display: flex;
 
@@ -236,6 +235,7 @@
 }
 .stack-left {
   height: 50vh;
+  width: max-content;
   position: sticky;
   top: 0;
   left: 0;
@@ -244,13 +244,13 @@
   flex-direction: column;
   justify-content: center;
   margin-left: 2vw;
-  flex-basis: 50%;
+  flex-basis: 44%;
 }
 .stack-right {
   height: 50vh;
   position: sticky;
   top: 0;
-  flex-basis: 50%;
+  flex-basis: 56%;
 }
 
 .cards {

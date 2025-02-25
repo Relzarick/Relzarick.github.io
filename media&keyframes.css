@@ -121,10 +121,10 @@
 
   /*! CARDS STAACK */
   .cards {
-    height: 200px;
-    width: 200px;
-    top: calc(50% - 100px);
-    left: calc(50% - 100px);
+    height: 175px;
+    width: 175px;
+    top: calc(50% - 87.5px);
+    left: calc(50% - 87.5px);
   }
 }
 

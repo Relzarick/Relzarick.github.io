@@ -72,6 +72,7 @@ const rotateCards = () => {
 };
 
 window.addEventListener("scroll", () => {
+  //* Need to study this more
   const distance = window.innerHeight / 2;
   const topval = cardsStack.getBoundingClientRect().top;
   let index = Math.floor(-1 * (topval / distance + 1));
