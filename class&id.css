@@ -274,7 +274,7 @@
   transform-origin: bottom left;
 }
 .cards:nth-child(1) {
-  background: linear-gradient(to right, #e34c26, #1572b6);
+  background: #e34c26;
 }
 .cards:nth-child(2) {
   background-color: #f7df1e;
