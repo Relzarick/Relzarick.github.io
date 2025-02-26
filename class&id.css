@@ -228,7 +228,8 @@
 }
 /*! CARD STACK */
 .cards-stack {
-  height: 200vh;
+  /** adjusted when adding new cards  */
+  height: 250vh;
   display: flex;
 
   position: relative;
@@ -275,11 +276,14 @@
   transform-origin: bottom left;
 }
 .cards:nth-child(1) {
-  background: #e34c26;
+  background-color: #e34c26;
 }
 .cards:nth-child(2) {
-  background-color: #f7df1e;
+  background-color: #1572b6;
 }
 .cards:nth-child(3) {
+  background-color: #f7df1e;
+}
+.cards:nth-child(4) {
   background-color: #3776ab;
 }
