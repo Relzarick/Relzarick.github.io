@@ -16,7 +16,7 @@
 /** SCROLL ANIMATIONS */
 .auto-show {
   animation: autoShowAnimation both;
-  animation-timeline: view(40% 5%);
+  animation-timeline: view(70% 5%);
 }
 
 @keyframes autoShowAnimation {
