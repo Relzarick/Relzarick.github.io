@@ -2,10 +2,10 @@ const projectContainer = document.querySelector(".main-container-3");
 
 const renderContainerItems = (id, container) => {
   const domKeys = {
-    p1: "<div class='v-line fade-in'></div><p class='fade-in'>Gained experience in creating layout structures with HTML, organizing content and developed CSS styling skills.</p>",
-    p2: "<div class='v-line fade-in'></div><p class='fade-in'>Learned the basics of JavaScript syntax, including variables, data types, and operators. Learned about scope and variable declaration. Gained an understanding of functions and how to create and call them.</p>",
-    p3: "<div class='v-line fade-in'></div><p class='fade-in'>At this point, I really started to get into the complexities of JavaScript. Working on many small and projects really enhanced my problem-solving, by debugging and refining code repeatedly. I expanded my understanding of JavaScript events and handling user interactions.</p>",
-    p4: "<div class='v-line fade-in'></div><p class='fade-in'>Became familiar with local and global scopes and how they affect variable access and function execution. Explored objects and arrays in-depth, understanding how to store and manipulate data.</p>",
+    p1: "<div class='v-line fade-in'></div><p class='fade-in'>Developed experience in creating layout structures with HTML, organizing content and developed CSS styling skills.</p>",
+    p2: "<div class='v-line fade-in'></div><p class='fade-in'>Mastered the basics of JavaScript syntax, such as variables, data types, and operators. Gained insights into scope and variable declaration, and learned how to create and call functions.</p>",
+    p3: "<div class='v-line fade-in'></div><p class='fade-in'>At this stage, I really got into the intricacies of JavaScript. By working on several small projects, my problem-solving skills were sharpened through continuous debugging and code refinement. I also expanded my understanding of JavaScript events and user interaction handling.</p>",
+    p4: "<div class='v-line fade-in'></div><p class='fade-in'>Gained familiarity with local and global scopes, and their influence on variable access and function execution. Explored objects and arrays in-depth, understanding how to store and manipulate data.</p>",
   };
 
   console.log(domKeys[id]);
