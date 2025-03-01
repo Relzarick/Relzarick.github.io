@@ -175,9 +175,9 @@
   background-color: var(--white);
   border: 2px solid var(--black);
   box-shadow: 5px 5px 10px 2px rgb(12 4 4 /0.1);
-  border-radius: 12px;
+  border-radius: 15px;
   width: 80vw;
-  padding: 4vw 5vw;
+  padding: 2vw 2vw;
   position: fixed;
   bottom: 2%;
   left: 50%;
