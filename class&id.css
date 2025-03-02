@@ -276,10 +276,10 @@
   transform-origin: bottom left;
 }
 .cards:nth-child(1) {
-  background-color: #e34c26;
+  background-color: #e44d26;
 }
 .cards:nth-child(2) {
-  background-color: #1572b6;
+  background-color: #663399;
 }
 .cards:nth-child(3) {
   background-color: #f7df1e;
