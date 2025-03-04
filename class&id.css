@@ -245,14 +245,19 @@
   flex-direction: column;
   justify-content: center;
   margin-left: 2vw;
-  flex-basis: 43%;
+  flex-basis: 45%;
+}
+#stack-left-link {
+  color: var(--black);
+  font-size: inherit;
+  font-weight: 700;
 }
 .stack-right {
   height: 50vh;
   width: max-content;
   position: sticky;
   top: 25%;
-  flex-basis: 57%;
+  flex-basis: 65%;
 }
 
 .cards {
@@ -279,7 +284,7 @@
   background-color: #e44d26;
 }
 .cards:nth-child(2) {
-  background-color: #663399;
+  background-color: rebeccapurple;
 }
 .cards:nth-child(3) {
   background-color: #f7df1e;
