@@ -86,3 +86,5 @@ window.addEventListener("scroll", () => {
   }
   rotateCards();
 });
+
+// intersectionobserver here
