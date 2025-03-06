@@ -112,9 +112,11 @@
   }
 
   /*! Can't fit this on mobile bruh*/
+  /* This can be intergrated into js */
   .inner-sub-c3 img {
     display: none;
   }
+  /*  */
   .v-line {
     display: none;
   }
