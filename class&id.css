@@ -162,7 +162,25 @@
 }
 
 .bottom-wrapper {
-  background-color: var(--background);
+  background-image: linear-gradient(
+      310deg,
+      rgba(131, 131, 131, 0.02) 0%,
+      rgba(131, 131, 131, 0.02) 13%,
+      transparent 13%,
+      transparent 46%,
+      rgba(112, 112, 112, 0.02) 46%,
+      rgba(112, 112, 112, 0.02) 100%
+    ),
+    linear-gradient(
+      21deg,
+      rgb(241, 239, 231) 0%,
+      rgb(241, 239, 231) 47%,
+      transparent 47%,
+      transparent 82%,
+      rgba(178, 178, 178, 0.02) 82%,
+      rgba(178, 178, 178, 0.02) 100%
+    ),
+    linear-gradient(90deg, rgb(241, 239, 231), rgb(241, 239, 231));
   width: 100%;
   position: relative;
 }
