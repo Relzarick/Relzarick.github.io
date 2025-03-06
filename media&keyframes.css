@@ -12,6 +12,11 @@
     opacity: 1;
   }
 }
+/** TRANSITIONS  */
+.nb-b {
+  border-color: var(--white);
+  transition: border-color 0.7s ease-in;
+}
 
 /** SCROLL ANIMATIONS */
 .auto-show {

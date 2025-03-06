@@ -87,4 +87,38 @@ window.addEventListener("scroll", () => {
   rotateCards();
 });
 
-// intersectionobserver here
+//! INTERSECTION OBSERVER
+
+document.addEventListener("DOMContentLoaded", () => {
+  const aboutSection = document.querySelector("#welcome");
+  const projectSection = document.querySelector("#projects");
+
+  const icons = document.querySelectorAll(".navbar-icon");
+  const aboutNav = icons[1];
+  const projectNav = icons[2];
+
+  //* callback
+  const callback = (elem) => {
+    elem.forEach((e) => {
+      if (e.isIntersecting) {
+        if (e.target.id === "welcome") {
+          aboutNav.classList.add("nb-b");
+        } else if (e.target.id === "projects") {
+          projectNav.classList.add("nb-b");
+        }
+      } else {
+        if (e.target.id === "welcome") {
+          aboutNav.classList.remove("nb-b");
+        } else if (e.target.id === "projects") {
+          projectNav.classList.remove("nb-b");
+        }
+      }
+    });
+  };
+
+  //? Create observer instance
+  const observer = new IntersectionObserver(callback);
+
+  observer.observe(aboutSection);
+  observer.observe(projectSection);
+});
