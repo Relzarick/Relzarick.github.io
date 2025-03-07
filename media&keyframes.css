@@ -13,9 +13,11 @@
   }
 }
 /** TRANSITIONS  */
+.navbar-icon {
+  transition: 0.6s ease-in;
+}
 .nb-b {
   border-color: var(--white);
-  transition: border-color 0.7s ease-in;
 }
 
 /** SCROLL ANIMATIONS */
