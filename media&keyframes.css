@@ -90,7 +90,7 @@
 
     margin: 5vw 0 0 5vw;
   }
-  /** CONTAINER TWO  */
+  /*! CONTAINER TWO  */
   .main-container-2 {
     text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black,
       -1px 1px 0px black;
@@ -99,7 +99,7 @@
     height: 30vh;
   }
 
-  /** CONTAINER THREE*/
+  /*! CONTAINER THREE*/
   .main-container-3 {
     flex-direction: column;
     gap: 10vw;
@@ -130,10 +130,13 @@
 
   /*! CARDS STAACK */
   .cards {
-    height: 175px;
-    width: 175px;
-    top: calc(50% - 87.5px);
-    left: calc(50% - 87px);
+    height: 170px;
+    width: 170px;
+    top: calc(50% - 85px);
+    left: calc(50% - 85px);
+  }
+  .cards:nth-child(3) {
+    font-size: clamp(12px, 20vh, 30px);
   }
 }
 

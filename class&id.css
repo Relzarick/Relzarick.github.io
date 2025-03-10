@@ -277,8 +277,8 @@
 }
 /*! CARD STACK */
 .cards-stack {
-  /** adjusted when adding new cards  */
-  height: 250vh;
+  /** adjusted when adding new cards (50)  */
+  height: 350vh;
   display: flex;
 
   position: relative;
@@ -313,7 +313,7 @@
   height: 350px;
   width: 350px;
   border-radius: 25px;
-  font-size: clamp(10px, clamp(20px, 20vw, 30px), 40px);
+  font-size: clamp(12px, 20vh, 40px);
   font-weight: 700;
 
   transition: 0.5s ease-in-out;
@@ -331,13 +331,23 @@
 }
 .cards:nth-child(1) {
   background-color: #e44d26;
+  color: var(--white);
 }
 .cards:nth-child(2) {
   background-color: rebeccapurple;
+  color: var(--white);
 }
 .cards:nth-child(3) {
-  background-color: #f7df1e;
+  background-color: #f0db4f;
 }
 .cards:nth-child(4) {
   background-color: #3776ab;
+  color: #ffd43b;
+}
+.cards:nth-child(5) {
+  background-color: #333;
+  color: var(--white);
+}
+.cards:nth-child(6) {
+  background-color: #f05032;
 }
