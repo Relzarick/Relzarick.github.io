@@ -48,10 +48,6 @@
 }
 
 /** HOVER EFFECTS */
-.nb-b:hover {
-  border: 2px solid var(--white);
-  /* todo DO the cirle animation  */
-}
 .nb-b1 a:hover {
   color: var(--white);
 }
@@ -70,7 +66,7 @@
   border-radius: 12px;
 }
 
-/** media for small phones*/
+/** media for Phones*/
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   /*! NAVBAR STYLES */
   .navbar-icon {
@@ -87,7 +83,6 @@
   }
   .sw-1 {
     display: inline-block;
-
     margin: 5vw 0 0 5vw;
   }
   /*! CONTAINER TWO  */
@@ -114,31 +109,17 @@
     justify-content: center;
   }
 
-  .info-container-1 h1 {
-    margin-left: 2vw;
-  }
-
-  /*! Can't fit this on mobile bruh*/
-  /* This can be intergrated into js */
-  .inner-sub-c3 img {
-    display: none;
-  }
-  /*  */
   .v-line {
     display: none;
   }
 
   /*! CARDS STAACK */
   .cards {
-    height: 170px;
-    width: 170px;
-    top: calc(50% - 85px);
-    left: calc(50% - 85px);
-  }
-  .cards:nth-child(3) {
+    height: 160px;
+    width: 160px;
+    top: calc(50% - 80px);
+    left: calc(50% - 80px);
+
     font-size: clamp(12px, 20vh, 30px);
   }
 }
-
-/* width 374.78 */
-/* height 171.94 */

@@ -16,7 +16,7 @@ const renderContainerItems = (id, container) => {
 };
 
 projectContainer.addEventListener("click", (event) => {
-  // * Finds the nearest ancestor element
+  //* Finds the nearest ancestor element
   const container = event.target.closest(".inner-sub-c3");
 
   if (
@@ -28,7 +28,7 @@ projectContainer.addEventListener("click", (event) => {
   }
 });
 
-// ! Below is used for display exclusive content
+//! Below is used for display exclusive content
 const pc = document.querySelectorAll(".pc");
 const mobile = document.querySelectorAll(".phone");
 const screenWidth = window.matchMedia("(max-width: 460px)");
@@ -43,7 +43,7 @@ if (screenWidth.matches) {
     mobile.style.display = "block";
   });
 
-  // ! POPUP
+  //! POPUP
   returnImg.addEventListener("click", () => {
     popUp.style.display = "none";
   });
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  //? Create observer instance
+  //? Create observers instance
   const observer = new IntersectionObserver(callback);
 
   observer.observe(aboutSection);
