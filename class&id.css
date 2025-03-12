@@ -83,7 +83,7 @@
   display: flex;
   color: var(--white);
 }
-/** This is needed to maintain the 2 by 2 for some reason */
+/** This is needed to maintain the 2*2 for some reason */
 .sub-c3a {
   padding: 3vh 3vh 12vh;
 }
