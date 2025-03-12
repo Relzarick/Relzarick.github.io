@@ -51,6 +51,17 @@ a {
 nav {
   display: flex;
   color: var(--background);
+
+  background-color: rgba(33, 33, 33, 80%);
+  border-radius: 11px;
+  padding: 6px;
+  max-width: fit-content;
+
+  position: fixed;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
 }
 img {
   height: 100%;

@@ -8,8 +8,8 @@ const renderContainerItems = (id, container) => {
     p4: "<div class='v-line fade-in'></div><p class='fade-in'>Gained familiarity with local and global scopes, and their influence on variable access and function execution. Explored objects and arrays in-depth, understanding how to store and manipulate data.</p>",
   };
 
-  console.log(domKeys[id]);
-  console.log(container);
+  // console.log(domKeys[id]);
+  // console.log(container);
 
   container.innerHTML = "";
   container.innerHTML += domKeys[id];
@@ -31,9 +31,10 @@ projectContainer.addEventListener("click", (event) => {
 //! Below is used for display exclusive content
 const pc = document.querySelectorAll(".pc");
 const mobile = document.querySelectorAll(".phone");
-const screenWidth = window.matchMedia("(max-width: 460px)");
+//* Phone width
+const screenWidth = window.matchMedia("(max-width: 480px)");
 
-// ? This is for the POPUP
+//* This is for the POPUP
 const returnImg = document.querySelector(".return");
 const popUp = document.querySelector(".pop-up");
 
@@ -42,8 +43,6 @@ if (screenWidth.matches) {
   mobile.forEach((mobile) => {
     mobile.style.display = "block";
   });
-
-  //! POPUP
   returnImg.addEventListener("click", () => {
     popUp.style.display = "none";
   });
@@ -51,6 +50,8 @@ if (screenWidth.matches) {
   mobile.forEach((mobile) => (mobile.style.display = "none"));
   pc.forEach((pc) => (pc.style.display = "block"));
 }
+
+//*
 
 //! CARDS
 
@@ -72,7 +73,7 @@ const rotateCards = () => {
 };
 
 window.addEventListener("scroll", () => {
-  //* Need to study this more
+  //TODO Need to study this more
   const distance = window.innerHeight / 2;
   const topval = cardsStack.getBoundingClientRect().top;
   let index = Math.floor(-1 * (topval / distance + 1));
@@ -87,6 +88,8 @@ window.addEventListener("scroll", () => {
   rotateCards();
 });
 
+//*
+
 //! INTERSECTION OBSERVER
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -98,6 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const projectNav = icons[2];
 
   //* callback
+  //* Check media for styles
   const callback = (elem) => {
     elem.forEach((e) => {
       if (e.isIntersecting) {
