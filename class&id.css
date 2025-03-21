@@ -52,6 +52,7 @@
   /* br, tl, tr, bl*/
   text-shadow: 2px 2px 0px black, -2px -2px 0px black, 2px -2px 0px black,
     -2px 2px 0px black;
+  /* -webkit-text-stroke: 2px black; */
   display: flex;
   justify-content: center;
   align-items: center;
