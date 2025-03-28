@@ -4,7 +4,7 @@ const renderContainerItems = (id, container) => {
   const domKeys = {
     p1: "<div class='v-line fade-in'></div><p class='fade-in'>Developed experience in creating layout structures with HTML, organizing content and CSS styling skills.</p>",
     p2: "<div class='v-line fade-in'></div><p class='fade-in'>Mastered the basics of JavaScript syntax, such as variables, data types, and operators. Gained insights into scope and variable declaration, and learned how to create and call functions.</p>",
-    p3: "<div class='v-line fade-in'></div><p class='fade-in'>This is my first attempt at working with APIs and more a in-depth use of HTML and CSS to style the project.</p>",
+    p3: "<div class='v-line fade-in'></div><p class='fade-in'>This is my first experience working with APIs and utilizing HTML and CSS and JS a more in-depth manner to style the project.</p>",
     p4: "<div class='v-line fade-in'></div><p class='fade-in'>Gained familiarity with local and global scopes, and their influence on variable access and function execution. Explored objects and arrays in-depth, understanding how to store and manipulate data.</p>",
   };
 
