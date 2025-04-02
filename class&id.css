@@ -75,33 +75,57 @@
 
 /*! This effects the containers*/
 .sub-c3 {
-  background-color: #354555;
-  border-radius: 20px;
-  text-align: center;
   width: 100%;
   height: 80vh;
+  border-radius: 20px;
+  text-align: center;
+  color: var(--black);
+
   flex: 0 0 48%;
   display: flex;
-  color: var(--white);
+  flex-direction: column;
 }
-/** This is needed to maintain the 2*2 for some reason */
-.sub-c3a {
-  padding: 3vh 3vh 12vh;
-}
-.inner-sub-c3 img {
-  margin-top: 2vw;
-}
-/*! ENDS HERE*/
 
 .c3-image {
   height: 60%;
 }
 .inner-sub-c3 {
-  height: 40%;
+  height: 25vh;
   width: 100%;
+  background-color: #354555;
+  color: var(--white);
+  margin: clamp(2rem, 3vw, 4rem) 0 0 0;
+  padding: 0 0 5vw;
+  border-radius: 15px;
+
   display: flex;
-  align-items: center;
+  flex-direction: column;
   position: relative;
+  text-align: center;
+}
+
+.project-title {
+  height: 40px;
+  width: 300px;
+  margin: 0;
+  padding: 10px 0 15px;
+
+  text-align: left;
+  background-color: var(--background);
+  color: var(--black);
+  clip-path: path(
+    "M -1,-1 L 300,-1 C 280,2 280,10 280,15 L 280,40 C 280,50 270,50 260,50 L 20,50 C -1,50 -1,55 0,65 L -2,-1 Z"
+  );
+}
+
+.inner-sub-c3 p {
+  padding: 2vw 1vw;
+}
+.inner-sub-c3a {
+  height: 100%;
+  display: flex;
+  margin: auto;
+  align-items: center;
 }
 .inner-sub-c3a p {
   cursor: pointer;
@@ -141,65 +165,9 @@
   width: 80vw;
   margin: auto;
 }
-.v-line {
-  border-left: 2px solid var(--white);
-  height: 15vh;
-  margin: 0 1vw;
-}
 
 .bottom-wrapper {
-  background-image: radial-gradient(
-      circle at 13% 47%,
-      rgba(140, 140, 140, 0.03) 0%,
-      rgba(140, 140, 140, 0.03) 25%,
-      transparent 25%,
-      transparent 100%
-    ),
-    radial-gradient(
-      circle at 28% 63%,
-      rgba(143, 143, 143, 0.03) 0%,
-      rgba(143, 143, 143, 0.03) 16%,
-      transparent 16%,
-      transparent 100%
-    ),
-    radial-gradient(
-      circle at 81% 56%,
-      rgb(241, 239, 231) 0%,
-      rgb(241, 239, 231) 12%,
-      transparent 12%,
-      transparent 100%
-    ),
-    radial-gradient(
-      circle at 26% 48%,
-      rgb(241, 239, 231) 0%,
-      rgb(241, 239, 231) 6%,
-      transparent 6%,
-      transparent 100%
-    ),
-    radial-gradient(
-      circle at 97% 17%,
-      rgba(150, 150, 150, 0.03) 0%,
-      rgba(150, 150, 150, 0.03) 56%,
-      transparent 56%,
-      transparent 100%
-    ),
-    radial-gradient(
-      circle at 50% 100%,
-      rgba(25, 25, 25, 0.03) 0%,
-      rgba(25, 25, 25, 0.03) 36%,
-      transparent 36%,
-      transparent 100%
-    ),
-    radial-gradient(
-      circle at 55% 52%,
-      rgb(241, 239, 231) 0%,
-      rgb(241, 239, 231) 6%,
-      transparent 6%,
-      transparent 100%
-    ),
-    linear-gradient(90deg, rgb(241, 239, 231), rgb(241, 239, 231));
-  width: 100%;
-  position: relative;
+  background-color: var(--background);
 }
 
 .highlight {
@@ -237,8 +205,8 @@
   cursor: pointer;
 
   position: absolute;
-  bottom: 2vw;
-  right: 2vw;
+  bottom: -1vw;
+  right: 1vw;
 }
 
 .item-highlight {

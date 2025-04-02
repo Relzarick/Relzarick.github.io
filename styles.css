@@ -32,8 +32,7 @@ h2 {
   font-size: clamp(3rem, 10vw, 12rem);
 }
 h3 {
-  font-size: clamp(2rem, 2.5vw, 4rem);
-  margin: 1vh auto 3vh;
+  font-size: clamp(2rem, 5vw, 2.5rem);
 }
 span {
   font-size: min(clamp(1rem, 4vw, 2rem), 8vw);
