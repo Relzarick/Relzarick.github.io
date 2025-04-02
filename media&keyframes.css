@@ -101,16 +101,10 @@
     flex-direction: column;
     gap: 10vw;
   }
-  .sub-c3a {
-    height: 110rem;
-    padding: 0;
-  }
-  .inner-sub-c3a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
 
+  iframe {
+    height: 55rem;
+  }
   /*! CARDS STAACK */
   .cards {
     height: 160px;

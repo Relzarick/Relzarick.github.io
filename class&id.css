@@ -76,7 +76,7 @@
 /*! This effects the containers*/
 .sub-c3 {
   width: 100%;
-  height: 80vh;
+  height: clamp(70rem, 80vh, 100rem);
   border-radius: 20px;
   text-align: center;
   color: var(--black);
@@ -84,10 +84,6 @@
   flex: 0 0 48%;
   display: flex;
   flex-direction: column;
-}
-
-.c3-image {
-  height: 60%;
 }
 .inner-sub-c3 {
   height: 25vh;
