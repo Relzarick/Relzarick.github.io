@@ -110,7 +110,7 @@
   background-color: var(--background);
   color: var(--black);
   clip-path: path(
-    "M -1,-1 L 300,-1 C 280,2 280,10 280,15 L 280,40 C 280,50 270,50 260,50 L 20,50 C -1,50 -1,55 0,65 L -2,-1 Z"
+    "M 0,-1 L 300,-1 C 280,1 280,10 280,15 L 280,40 C 280,50 270,50 260,50 L 20,50 L -1,50 L -1,-1 Z"
   );
 }
 
@@ -281,7 +281,7 @@
 /*! SLIDER  */
 .slider {
   height: 20rem;
-  width: 100;
+  width: 100%;
   position: relative;
   white-space: nowrap;
   overflow: hidden;
@@ -295,5 +295,3 @@
   animation: auto-slide 15s linear infinite;
   animation-delay: calc((15s / 2) * (var(--position) - 1));
 }
-
-/* defining width would fix clipping issues  */

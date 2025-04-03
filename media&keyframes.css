@@ -101,10 +101,19 @@
     flex-direction: column;
     gap: 10vw;
   }
+  .inner-sub-c3 {
+    padding: 0 0 7vw;
+  }
 
   iframe {
     height: 55rem;
   }
+  .project-title {
+    clip-path: path(
+      "M 0,-1 L 240,-1 C 220,1 220,10 220,15 L 220,40 C 220,50 210,50 210,50 L 20,50 L -1,50 L -1,-1 Z"
+    );
+  }
+
   /*! CARDS STAACK */
   .cards {
     height: 160px;
