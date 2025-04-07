@@ -70,61 +70,50 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2vw;
 }
 
 /*! This effects the containers*/
 .sub-c3 {
   width: 100%;
   height: clamp(70rem, 80vh, 100rem);
+  margin: 5vw 0;
   border-radius: 20px;
   text-align: center;
+  background-color: #354555;
+
   color: var(--black);
 
-  flex: 0 0 48%;
   display: flex;
   flex-direction: column;
 }
 .inner-sub-c3 {
-  height: 25vh;
+  height: 30%;
   width: 100%;
-  background-color: #354555;
   color: var(--white);
-  margin: clamp(2rem, 3vw, 4rem) 0 0 0;
-  padding: 0 0 5vw;
   border-radius: 15px;
 
   display: flex;
+  justify-content: center;
   flex-direction: column;
   position: relative;
   text-align: center;
 }
 
+.iframe-div {
+  height: 70%;
+  display: flex;
+  justify-content: center;
+}
 .project-title {
-  height: 40px;
-  width: 300px;
-  margin: 0;
-  padding: 10px 0 15px;
-
-  text-align: left;
-  background-color: var(--background);
-  color: var(--black);
-  clip-path: path(
-    "M 0,-1 L 300,-1 C 280,1 280,10 280,15 L 280,40 C 280,50 270,50 260,50 L 20,50 L -1,50 L -1,-1 Z"
-  );
+  padding: 0vw 1vw 2vw;
+  font-size: clamp(3rem, 20vw, 5rem);
 }
 
 .inner-sub-c3 p {
-  padding: 2vw 1vw;
-}
-.inner-sub-c3a {
-  height: 100%;
-  display: flex;
-  margin: auto;
-  align-items: center;
-}
-.inner-sub-c3a p {
+  margin: 2vw 1vw;
   cursor: pointer;
+  max-width: 60%;
+  margin: 0 auto;
 }
 
 /*! MAIN CONTAINER FOUR STYLES */
@@ -201,8 +190,8 @@
   cursor: pointer;
 
   position: absolute;
-  bottom: -1vw;
-  right: 1vw;
+  bottom: 2vw;
+  right: 2vw;
 }
 
 .item-highlight {

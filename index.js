@@ -2,10 +2,10 @@ const projectContainer = document.querySelector(".main-container-3");
 
 const renderContainerItems = (id, container) => {
   const domKeys = {
-    p1: "<h3 class='project-title'>YouTube Clone</h3> <p class='fade-in'>Developed experience in creating layout structures with HTML, organizing content and CSS styling skills.</p>",
-    p2: "<h3 class='project-title'>Rock Paper Scissors</h3> <p class='fade-in'>Working on it</p>",
+    p1: "<h3 class='project-title'>YouTube Clone</h3> <ul><li>Learned basic html syntax</li><li>learned css</li><li>experience with blahblah</li></ul>",
+    p2: "<h3 class='project-title'>Rock Paper Scissors</h3> <p class='fade-in'>Gained familiarity with local and global scopes, and their influence on variable access and function execution. Explored objects and arrays in-depth, understanding how to store and manipulate data.</p>",
     p3: "<h3 class='project-title'>Pokedex App</h3> <p class='fade-in'>This is my first experience working with APIs and utilizing HTML and CSS and JS a more in-depth manner to style the project.</p>",
-    p4: "<h3 class='project-title'>Cash Register</h3> <p class='fade-in'>Gained familiarity with local and global scopes, and their influence on variable access and function execution. Explored objects and arrays in-depth, understanding how to store and manipulate data.</p>",
+    p4: "<h3 class='project-title'>Cash Register</h3> <p class='fade-in'>still working on pipe spawn</p>",
   };
 
   // console.log(domKeys[id]);
@@ -20,7 +20,7 @@ projectContainer.addEventListener("click", (event) => {
   const container = event.target.closest(".inner-sub-c3");
 
   if (
-    (event.target && event.target.closest(".inner-sub-c3a p")) ||
+    (event.target && event.target.closest(".inner-sub-c3 p")) ||
     event.target.closest(".next-icon")
   ) {
     const paragraph = event.target.id;
