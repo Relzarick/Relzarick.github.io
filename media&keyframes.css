@@ -20,23 +20,6 @@
   border-color: var(--white);
 }
 
-/** SCROLL ANIMATIONS */
-.auto-show {
-  animation: autoShowAnimation both;
-  animation-timeline: view(70% 5%);
-}
-
-@keyframes autoShowAnimation {
-  from {
-    opacity: 0;
-    transform: translateY(200px) scale(0.3);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
 /** SLIDER ANIMATIONS */
 @keyframes auto-slide {
   from {
@@ -64,6 +47,34 @@
   animation: fadeInAnimation 0.35s ease-in forwards;
   background-image: linear-gradient(151deg, #faaca8 10%, #ddd6f3 90%);
   border-radius: 12px;
+}
+
+/* * PROJECT SLIDES EFFECT */
+.shift-left {
+  animation: slide-left 1.1s ease-in;
+}
+@keyframes slide-left {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+.slideToLeft {
+  animation: slideToLeft 0.9s ease-in-out;
+}
+
+@keyframes slideToLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 /** media for Phones*/

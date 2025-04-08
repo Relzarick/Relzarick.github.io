@@ -2,10 +2,10 @@ const projectContainer = document.querySelector(".main-container-3");
 
 const renderContainerItems = (id, container) => {
   const domKeys = {
-    p1: "<h3 class='project-title'>YouTube Clone</h3> <ul><li>Learned basic html syntax</li><li>learned css</li><li>experience with blahblah</li></ul>",
-    p2: "<h3 class='project-title'>Rock Paper Scissors</h3> <p class='fade-in'>Gained familiarity with local and global scopes, and their influence on variable access and function execution. Explored objects and arrays in-depth, understanding how to store and manipulate data.</p>",
-    p3: "<h3 class='project-title'>Pokedex App</h3> <p class='fade-in'>This is my first experience working with APIs and utilizing HTML and CSS and JS a more in-depth manner to style the project.</p>",
-    p4: "<h3 class='project-title'>Cash Register</h3> <p class='fade-in'>still working on pipe spawn</p>",
+    p1: "<h3 class='project-title'>Beginnings</h3> <p>Working on this was great fun. It taught me many small lessons, which I expanded on as I delved deeper. I got to try out using HTML and CSS, the foundation of web design.</p>",
+    p2: "<h3 class='project-title'>Lessons and Growth</h3> <p>While not the most challenging project, I was really proud when I completed the app. It tested the basics and highlighted just how far I've come from builiding a simple calculator.</p>",
+    p3: "<h3 class='project-title'>First Steps</h3> <p>This is my first experience working with APIs, this was a first attempt at using CSS to style the project in a more in-depth manner.</p>",
+    p4: "<h3 class='project-title'>Trials and Triumphs</h3> <p>This project has honestly been a pain in the butt. There was so much I didn’t know and so much I’ve yet to learn, but it will serve as a strong foundation for my future planned projects.</p>",
   };
 
   // console.log(domKeys[id]);
@@ -20,11 +20,23 @@ projectContainer.addEventListener("click", (event) => {
   const container = event.target.closest(".inner-sub-c3");
 
   if (
-    (event.target && event.target.closest(".inner-sub-c3 p")) ||
+    event.target.closest(".inner-sub-c3 p") ||
     event.target.closest(".next-icon")
   ) {
     const paragraph = event.target.id;
-    renderContainerItems(paragraph, container);
+
+    const icon = document.querySelectorAll(".next-icon");
+    const findId = Array.from(icon).find((icon) => icon.id === paragraph);
+    if (findId) findId.style.display = "none";
+
+    container.classList.add("shift-left");
+
+    container.addEventListener("animationend", () => {
+      container.classList.remove("shift-left");
+      container.classList.add("slideToLeft");
+
+      renderContainerItems(paragraph, container);
+    });
   }
 });
 
