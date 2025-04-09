@@ -126,6 +126,10 @@
   iframe {
     height: 47vh;
     width: 100%;
+    border-radius: 0;
+  }
+  .sub-c3 {
+    border-radius: 0;
   }
 
   .inner-sub-c3 {

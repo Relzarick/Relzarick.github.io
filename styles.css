@@ -7,6 +7,7 @@
   --black: #222;
   --white: #f8f8f8;
   --gray: #3e3e3e;
+  --translucent-black: rgba(33, 33, 33, 80%);
 }
 * {
   margin: 0;
@@ -51,7 +52,7 @@ nav {
   display: flex;
   color: var(--background);
 
-  background-color: rgba(33, 33, 33, 80%);
+  background-color: var(--translucent-black);
   border-radius: 11px;
   padding: 6px;
   max-width: fit-content;
