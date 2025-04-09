@@ -78,12 +78,13 @@
   text-align: left;
   max-width: 1650px;
   width: 100%;
+  margin: 0 0 0 2vw;
 }
 .container-3-title div {
-  width: 100%;
+  width: 90%;
   height: 8px;
   background-color: var(--translucent-black);
-  margin: 0 2vw 0 clamp(10px, 10vw, 90px);
+  margin: 0 2vw 0 clamp(10px, 5vw, 90px);
   border-radius: 5px;
 }
 
