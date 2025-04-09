@@ -16,13 +16,13 @@
   font-family: "Apercu Pro", sans-serif;
   cursor: default;
 }
+
 body {
   background-color: var(--green);
   color: var(--font);
-  max-width: none;
 }
 main {
-  margin-top: 12vh;
+  margin-top: 10vh;
 }
 h1 {
   font-size: clamp(5rem, 15vw, 15rem);
@@ -60,7 +60,7 @@ nav {
   top: 2%;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 99;
+  z-index: 999;
 }
 img {
   height: 100%;
@@ -68,9 +68,9 @@ img {
   border-radius: 12px;
 }
 iframe {
-  border: 2px solid var(--white);
+  border: 2px solid var(--black);
   border-radius: 12px;
-  width: 90%;
+  width: 95%;
   height: 90%;
   margin: auto;
 }

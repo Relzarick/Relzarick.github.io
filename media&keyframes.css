@@ -71,9 +71,11 @@
 @keyframes slideToLeft {
   from {
     transform: translateX(100%);
+    opacity: 0;
   }
   to {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -112,18 +114,31 @@
   .main-container-3 {
     flex-direction: column;
     gap: 10vw;
+    margin: 0 0 10vh;
   }
   .inner-sub-c3 {
     padding: 0 0 7vw;
   }
 
-  iframe {
-    height: 55rem;
+  .iframe-div {
+    height: max-content;
   }
-  .project-title {
-    clip-path: path(
-      "M 0,-1 L 240,-1 C 220,1 220,10 220,15 L 220,40 C 220,50 210,50 210,50 L 20,50 L -1,50 L -1,-1 Z"
-    );
+  iframe {
+    height: 47vh;
+    width: 100%;
+  }
+
+  .inner-sub-c3 {
+    margin: 3vh 0 0;
+  }
+
+  .inner-sub-c3 p {
+    max-width: 90vw;
+    text-align: left;
+  }
+
+  .next-icon {
+    bottom: -5vh;
   }
 
   /*! CARDS STAACK */

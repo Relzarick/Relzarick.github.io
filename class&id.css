@@ -70,6 +70,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 /*! This effects the containers*/
@@ -81,15 +82,19 @@
   text-align: center;
   background-color: #354555;
 
-  color: var(--black);
+  color: var(--white);
 
   display: flex;
   flex-direction: column;
 }
+.iframe-div {
+  height: 70%;
+  display: flex;
+  justify-content: center;
+}
 .inner-sub-c3 {
   height: 30%;
   width: 100%;
-  color: var(--white);
   border-radius: 15px;
 
   display: flex;
@@ -99,11 +104,6 @@
   text-align: center;
 }
 
-.iframe-div {
-  height: 70%;
-  display: flex;
-  justify-content: center;
-}
 .project-title {
   padding: 0vw 1vw 2vw;
   font-size: clamp(3rem, 20vw, 5rem);
@@ -215,8 +215,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 2vw;
-  flex-basis: 44%;
+  margin-left: 2%;
+  flex-basis: 42%;
 }
 #stack-left-link {
   color: var(--black);
@@ -228,7 +228,7 @@
   width: max-content;
   position: sticky;
   top: 25%;
-  flex-basis: 68%;
+  flex-basis: 56%;
 }
 
 .cards {
