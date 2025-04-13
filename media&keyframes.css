@@ -116,6 +116,15 @@
     gap: 10vw;
     margin: 0 0 10vh;
   }
+  .projects-title h3 {
+    white-space: wrap;
+    width: 40%;
+  }
+  .projects-title div {
+    width: 100%;
+    margin: 0 20px 0 0;
+  }
+
   .inner-sub-c3 {
     padding: 0 0 7vw;
   }
