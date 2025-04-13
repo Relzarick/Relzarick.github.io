@@ -158,20 +158,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // ! BACKEND STUFF
 const terminal = document.querySelector("textarea");
-const app = "budget";
-const action = terminal.value;
+let app = "password";
 
 terminal.addEventListener("keypress", (e) => {
   if (e.key === "Enter") {
     e.preventDefault();
-    fetch("https://relzarick.pythonanywhere.com/", {
+
+    const action = terminal.value.split("\n").pop().toLocaleLowerCase().trim(); //* splits by \n and returns last val
+
+    console.log(action);
+
+    if (action === "budget" || action === "password") {
+      app = action;
+      terminal.value += `\nSwitched to ${app} app\n`;
+      return;
+    }
+
+    if (action === "clear") {
+      terminal.value = "";
+      return;
+    }
+
+    fetch("http://127.0.0.1:5000/process", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text: action, app: app }),
+      body: JSON.stringify({ text: action, mode: app }),
     })
-      .then((response) => response.json())
-      .then((str) => {
-        terminal.value += `\n ${str.response}`;
-      });
+      .then((reply) => reply.json()) // Converts response to JSON
+      .then((obj) => {
+        terminal.value += `\n${obj.response}\n`; // Parses data into next line
+      })
+      .catch((error) => console.error("Fetch Error:", error));
   }
+
+  //
 });
