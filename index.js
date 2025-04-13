@@ -155,3 +155,23 @@ document.addEventListener("DOMContentLoaded", () => {
   observer.observe(aboutSection);
   observer.observe(projectSection);
 });
+
+// ! BACKEND STUFF
+const terminal = document.querySelector("textarea");
+const app = "budget";
+const action = terminal.value;
+
+terminal.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    fetch("https://relzarick.pythonanywhere.com/", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text: action, app: app }),
+    })
+      .then((response) => response.json())
+      .then((str) => {
+        terminal.value += `\n ${str.response}`;
+      });
+  }
+});

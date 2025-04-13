@@ -1,265 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="class&id.css" />
-    <link rel="stylesheet" href="media&keyframes.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link href="https://fonts.cdnfonts.com/css/apercu-pro" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="class&id.css" />
+  <link rel="stylesheet" href="media&keyframes.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      defer
-      type="module"
-      src="https://pyscript.net/releases/2025.3.1/core.js"
-    ></script>
-  </head>
-  <body>
-    <nav>
-      <div class="navbar-icon nb-a">
-        <p class="pc">Jun Feng</p>
-        <p class="phone">JF</p>
+  <link href="https://fonts.cdnfonts.com/css/apercu-pro" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <nav>
+    <div class="navbar-icon nb-a">
+      <p class="pc">Jun Feng</p>
+      <p class="phone">JF</p>
+    </div>
+
+    <div class="navbar-sub-container">
+      <div class="navbar-icon"><a href="#welcome">About</a></div>
+      <div class="navbar-icon"><a href="#projects">Projects</a></div>
+      <div class="navbar-icon nb-b1">
+        <a href="#contacts">Contact Me</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="pop-up phone">
+      <p>
+        Certain features were not desgined for mobile. For the best
+        experience, visit the site on a computer.
+      </p>
+      <img class="return fade-in" src="images/return.png" />
+    </div>
+
+    <section id="welcome" class="main-container-1">
+      <div class="sub-c1a fade-in">
+        <h1>Website</h1>
+        <h1>Developer<span class="highlight">.</span></h1>
       </div>
 
-      <div class="navbar-sub-container">
-        <div class="navbar-icon"><a href="#welcome">About</a></div>
-        <div class="navbar-icon"><a href="#projects">Projects</a></div>
-        <div class="navbar-icon nb-b1">
-          <a href="#contacts">Contact Me</a>
+      <div class="fade-in">
+        <span class="sw-1">Committed to improving my skills in website design, creation and
+          JavaScript.</span>
+      </div>
+    </section>
+
+    <section class="main-container-2">
+      <img rel="preload" src="images/container-2.jpg" fetchpriority="high" loading="eager" />
+      <div class="sub-c2">
+        <h2 class="pc">Hi, I'm JF</h2>
+        <h2 class="phone">Hi, I'm Jun Feng</h2>
+        <span class="sub-c2-span">I'm dedicated to refined and clean designs, with this page serving
+          as a showcase for some of my projects</span>
+      </div>
+    </section>
+
+    <div class="bottom-wrapper">
+      <section class="cards-stack">
+        <div class="stack-left">
+          <h2>My Skills</h2>
+          <p>
+            Check out my
+            <a id="stack-left-link" href="https://github.com/Relzarick">GitHub</a>
+            for my python repos.
+          </p>
         </div>
-      </div>
-    </nav>
 
-    <main>
-      <div class="pop-up phone">
-        <p>
-          Certain features were not desgined for mobile. For the best
-          experience, visit the site on a computer.
-        </p>
-        <img class="return fade-in" src="images/return.png" />
-      </div>
-
-      <section id="welcome" class="main-container-1">
-        <div class="sub-c1a fade-in">
-          <h1>Website</h1>
-          <h1>Developer<span class="highlight">.</span></h1>
-        </div>
-
-        <div class="fade-in">
-          <span class="sw-1"
-            >Committed to improving my skills in website design, creation and
-            JavaScript.</span
-          >
+        <div class="stack-right">
+          <div class="cards">CSS</div>
+          <div class="cards">JavaScript</div>
+          <div class="cards">PYTHON</div>
+          <div class="cards">Git</div>
         </div>
       </section>
 
-      <section class="main-container-2">
-        <img
-          rel="preload"
-          src="images/container-2.jpg"
-          fetchpriority="high"
-          loading="eager"
-        />
-        <div class="sub-c2">
-          <h2 class="pc">Hi, I'm JF</h2>
-          <h2 class="phone">Hi, I'm Jun Feng</h2>
-          <span class="sub-c2-span"
-            >I'm dedicated to refined and clean designs, with this page serving
-            as a showcase for some of my projects</span
-          >
+      <section id="projects" class="main-container-3">
+        <div class="projects-title">
+          <h3>Front End Projects</h3>
+          <div></div>
         </div>
-      </section>
 
-      <div class="bottom-wrapper">
-        <!-- <section class="cards-stack">
-          <div class="stack-left">
-            <h2>My Skills</h2>
-            <p>
-              Check out my
-              <a id="stack-left-link" href="https://github.com/Relzarick"
-                >GitHub</a
-              >
-              for my python repos.
+        <!--  -->
+        <div class="sub-c3">
+          <div class="iframe-div">
+            <iframe src="https://relzarick.github.io/YouTube-Clone/" loading="lazy"></iframe>
+          </div>
+
+          <div class="inner-sub-c3">
+            <h3 class="project-title">YouTube Clone</h3>
+            <p id="p1">
+              Working on this was a valuable introduction to web development.
+              It was an excellent project to get started with the basics of
+              web design.
             </p>
+            <div class="next-icon" id="p1"></div>
+          </div>
+        </div>
+
+        <div class="sub-c3">
+          <div class="iframe-div">
+            <iframe src="https://relzarick.github.io/cash-Register/" loading="lazy"></iframe>
           </div>
 
-          <div class="stack-right">
-            <div class="cards">CSS</div>
-            <div class="cards">JavaScript</div>
-            <div class="cards">PYTHON</div>
-            <div class="cards">Git</div>
+          <div class="inner-sub-c3">
+            <h3 class="project-title">Cash Register</h3>
+            <p id="p2">
+              Accepts user input and dispenses change accordingly. Cash
+              received will be deposited starting from the highest possible
+              denominations.
+            </p>
+            <div class="next-icon" id="p2"></div>
           </div>
-        </section> -->
+        </div>
 
-        <section id="projects" class="main-container-3">
-          <div class="projects-title">
-            <h3>Front End Projects</h3>
-            <div></div>
+        <div class="sub-c3">
+          <div class="iframe-div">
+            <iframe src="https://relzarick.github.io/Pokedex/"></iframe>
           </div>
 
-          <!--  -->
-          <div class="sub-c3">
-            <div class="iframe-div">
-              <iframe
-                src="https://relzarick.github.io/YouTube-Clone/"
-                loading="lazy"
-              ></iframe>
-            </div>
+          <div class="inner-sub-c3">
+            <h3 class="project-title">Pokedex App</h3>
+            <p id="p3">
+              Displays information about any Pokémon, including its sprite,
+              typing, height, weight, and stats.
+            </p>
+            <div class="next-icon" id="p3"></div>
+          </div>
+        </div>
 
-            <div class="inner-sub-c3">
-              <h3 class="project-title">YouTube Clone</h3>
-              <p id="p1">
-                Working on this was a valuable introduction to web development.
-                It was an excellent project to get started with the basics of
-                web design.
+        <div class="sub-c3">
+          <div class="iframe-div">
+            <iframe src="https://relzarick.github.io/FlappyBird/" loading="lazy"></iframe>
+          </div>
+
+          <div class="inner-sub-c3">
+            <h3 class="project-title">Flappy bird game</h3>
+            <p id="p4">
+              Working on bird tilt and death state, spacebar input(Restart button only works when you dont scroll the
+              page???)
+            </p>
+            <div class="next-icon" id="p4"></div>
+          </div>
+        </div>
+
+        <div class="projects-title">
+          <h3>Python Projects</h3>
+          <div></div>
+        </div>
+
+        <div class="python-Container">
+          <textarea
+            placeholder="This is intended to connect to a backend server to run my py scripts. However, I have no idea what I am doing "></textarea>
+
+          <div class="python-texts">
+            <div class="py-first">
+              <h3>BUDGET APP</h3>
+              <p>Deposit, withdraw, and transfer between categories.</p>
+              <p>
+                Three categories (food, clothing, and auto) have been
+                pre-made.
               </p>
-              <div class="next-icon" id="p1"></div>
-            </div>
-          </div>
-
-          <div class="sub-c3">
-            <div class="iframe-div">
-              <iframe
-                src="https://relzarick.github.io/cash-Register/"
-                loading="lazy"
-              ></iframe>
-            </div>
-
-            <div class="inner-sub-c3">
-              <h3 class="project-title">Cash Register</h3>
-              <p id="p2">
-                Accepts user input and dispenses change accordingly. Cash
-                received will be deposited starting from the highest possible
-                denominations.
+              <p>Need more categories? Add your own as needed.</p>
+              <p>
+                You can view a chart comparing withdrawals to total spending.
               </p>
-              <div class="next-icon" id="p2"></div>
-            </div>
-          </div>
-
-          <div class="sub-c3">
-            <div class="iframe-div">
-              <iframe src="https://relzarick.github.io/Pokedex/"></iframe>
+              <p class="phone">(Tap to toggle)</p>
             </div>
 
-            <div class="inner-sub-c3">
-              <h3 class="project-title">Pokedex App</h3>
-              <p id="p3">
-                Displays information about any Pokémon, including its sprite,
-                typing, height, weight, and stats.
+            <div class="py-second pc">
+              <h3>PASSWORD Generator</h3>
+              <p>Select between two modes: Express or Custom.</p>
+              <p>
+                Custom mode lets you set a specific length for your password.
               </p>
-              <div class="next-icon" id="p3"></div>
-            </div>
-          </div>
-
-          <div class="sub-c3">
-            <div class="iframe-div">
-              <iframe
-                src="https://relzarick.github.io/FlappyBird/"
-                loading="lazy"
-              ></iframe>
-            </div>
-
-            <div class="inner-sub-c3">
-              <h3 class="project-title">Flappy bird game</h3>
-              <p id="p4">
-                Working on preGame state, touch and spacebar input and bird
-                gravity (Restart button only works when you dont scroll the
-                page???)
+              <p>
+                Choose whether to include ambiguous characters like (1,i,0,o)
               </p>
-              <div class="next-icon" id="p4"></div>
+              <p>
+                Set minimum requirements for numbers, upper and lowercase
+                letters, and symbols.
+              </p>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="projects-title">
-            <h3>Python Projects</h3>
-            <div></div>
-          </div>
+      <section class="main-container-4 pc">
+        <div class="slider">
+          <h1 class="slider-item" style="--position: 1">
+            <span class="item-highlight">永不满足</span>永远挑战
+          </h1>
+          <h1 class="slider-item" style="--position: 2">
+            <span class="item-highlight">永不满足</span>永远挑战
+          </h1>
+        </div>
+      </section>
 
-          <div class="python-Container">
-            <textarea placeholder="Type here..."></textarea>
-            <div class="python-texts">
-              <div class="py-first">
-                <h3>BUDGET APP</h3>
-                <p>Deposit, withdraw, and transfer between categories.</p>
-                <p>
-                  Three categories (food, clothing, and auto) have been
-                  pre-made.
-                </p>
-                <p>Need more categories? Add your own as needed.</p>
-                <p>
-                  You can view a chart comparing withdrawals to total spending.
-                </p>
-                <p class="phone">(Tap to toggle)</p>
-              </div>
+      <div class="line"></div>
 
-              <div class="py-second pc">
-                <h3>PASSWORD Generator</h3>
-                <p>Select between two modes: Express or Custom.</p>
-                <p>
-                  Custom mode lets you set a specific length for your password.
-                </p>
-                <p>
-                  Choose whether to include ambiguous characters like (1,i,0,o)
-                </p>
-                <p>
-                  Set minimum requirements for numbers, upper and lowercase
-                  letters, and symbols.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+      <footer class="info-container" id="contacts">
+        <div class="info-container-1">
+          <h1>Let's</h1>
+          <h1>Connect</h1>
+          <ul class="info-container-ul">
+            <li>
+              <a class="ul-a" href="https://www.youtube.com/watch?v=NJJGvWSsuS8">Linkedin</a>
+            </li>
+            <li>
+              <a class="ul-a" href="https://wa.me/6593915384">Whatsapp</a>
+            </li>
+            <li>
+              <a class="ul-a" href="https://github.com/Relzarick">Github</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
 
-        <section class="main-container-4 pc">
-          <div class="slider">
-            <h1 class="slider-item" style="--position: 1">
-              <span class="item-highlight">永不满足</span>永远挑战
-            </h1>
-            <h1 class="slider-item" style="--position: 2">
-              <span class="item-highlight">永不满足</span>永远挑战
-            </h1>
-          </div>
-        </section>
+    <!--  -->
+  </main>
 
-        <div class="line"></div>
+  <script src="index.js"></script>
+</body>
 
-        <footer class="info-container" id="contacts">
-          <div class="info-container-1">
-            <h1>Let's</h1>
-            <h1>Connect</h1>
-            <ul class="info-container-ul">
-              <li>
-                <a
-                  class="ul-a"
-                  href="https://www.youtube.com/watch?v=NJJGvWSsuS8"
-                  >Linkedin</a
-                >
-              </li>
-              <li>
-                <a class="ul-a" href="https://wa.me/6593915384">Whatsapp</a>
-              </li>
-              <li>
-                <a class="ul-a" href="https://github.com/Relzarick">Github</a>
-              </li>
-            </ul>
-          </div>
-        </footer>
-      </div>
-
-      <!--  -->
-    </main>
-
-    <script src="index.js"></script>
-    <!-- <script type="py" src="python-projects/Budget App.py"></script> -->
-    <!-- <script type="py" src="python-projects/PassWord Generator.py"></script> -->
-  </body>
 </html>
