@@ -40,11 +40,15 @@ projectContainer.addEventListener("click", (event) => {
   }
 });
 
+const pyDescription = document.querySelector(".python-texts");
+const firstText = document.querySelector(".py-first");
+const SecondText = document.querySelector(".py-second");
+
 //! Below is used for display exclusive content
 const pc = document.querySelectorAll(".pc");
 const mobile = document.querySelectorAll(".phone");
-//* Phone width
-const screenWidth = window.matchMedia("(max-width: 480px)");
+
+const screenWidth = window.matchMedia("(max-width: 480px)"); //* Phone width
 
 //* This is for the POPUP
 const returnImg = document.querySelector(".return");
@@ -52,12 +56,25 @@ const popUp = document.querySelector(".pop-up");
 
 if (screenWidth.matches) {
   pc.forEach((pc) => (pc.style.display = "none"));
+
   mobile.forEach((mobile) => {
     mobile.style.display = "block";
   });
+
   returnImg.addEventListener("click", () => {
     popUp.style.display = "none";
   });
+
+  firstText.style.display = "block";
+
+  pyDescription.addEventListener("click", () => {
+    [firstText.style.display, SecondText.style.display] =
+      firstText.style.display === "block"
+        ? ["none", "block"]
+        : ["block", "none"];
+  });
+
+  //
 } else {
   mobile.forEach((mobile) => (mobile.style.display = "none"));
   pc.forEach((pc) => (pc.style.display = "block"));

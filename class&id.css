@@ -67,10 +67,10 @@
 /*! main container three styles */
 .main-container-3 {
   margin: 0 2vw 10vh;
+  overflow-x: hidden;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  overflow-x: hidden;
 }
 .projects-title {
   display: flex;
@@ -134,20 +134,26 @@
 }
 
 .python-Container {
+  max-width: 1650px;
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  margin: 5vw 0 0;
+  justify-content: space-between;
+  margin: 5vw 0;
 }
 .python-texts {
   margin: 0 0 0 2vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 600px;
 }
 .python-texts p {
+  font-size: clamp(1rem, 5vw, 2rem);
   margin: 5px 0;
+}
+.py-second {
+  margin: 1vw 0 0;
 }
 
 /*! MAIN CONTAINER FOUR STYLES */

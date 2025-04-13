@@ -78,12 +78,12 @@ iframe {
 textarea {
   resize: none;
   max-width: 590px;
-  max-height: 390px;
+  min-width: 200px;
   width: 50vw;
-  height: 30vw;
   background-color: var(--black);
   color: var(--white);
   font-size: 1.9rem;
   border-radius: 14px;
   padding: 2vw;
+  border: none;
 }
