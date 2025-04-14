@@ -154,6 +154,9 @@
   .next-icon {
     bottom: -5vh;
   }
+  .python-Container {
+    margin: 5vw 0 0 1vw;
+  }
 
   /*! CARDS STAACK */
   .cards {
