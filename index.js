@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // ! BACKEND STUFF
 const terminal = document.querySelector("textarea");
-let app = "password";
+let app = "budget";
 
 terminal.addEventListener("keypress", (e) => {
   if (e.key === "Enter") {
@@ -166,7 +166,12 @@ terminal.addEventListener("keypress", (e) => {
 
     const action = terminal.value.split("\n").pop().toLocaleLowerCase().trim(); //* splits by \n and returns last val
 
-    console.log(action);
+    // console.log(action);
+
+    if (action === "clear") {
+      terminal.value = "";
+      return;
+    }
 
     if (action === "budget" || action === "password") {
       app = action;
@@ -174,15 +179,15 @@ terminal.addEventListener("keypress", (e) => {
       return;
     }
 
-    if (action === "clear") {
-      terminal.value = "";
-      return;
-    }
+    console.log(action, app);
 
-    fetch("http://127.0.0.1:5000/process", {
+    fetch("https://relzarick.pythonanywhere.com/process", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text: action, mode: app }),
+      body: JSON.stringify({
+        text: action,
+        mode: app,
+      }),
     })
       .then((reply) => reply.json()) // Converts response to JSON
       .then((obj) => {
