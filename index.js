@@ -181,7 +181,7 @@ terminal.addEventListener("keypress", (e) => {
 
     console.log(action, app);
 
-    fetch("https://relzarick.pythonanywhere.com/process", {
+    fetch("http://127.0.0.1:5000/process", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
