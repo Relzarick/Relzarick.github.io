@@ -200,8 +200,9 @@
   font-size: clamp(5rem, 15vw, 15rem);
 }
 .pop-up {
-  background-color: var(--white);
-  border: 2px solid var(--black);
+  background-color: var(--translucent-black);
+  color: var(--white);
+  border: 2px solid var(--translucent-black);
   box-shadow: 5px 5px 10px 2px rgb(12 4 4 /0.1);
   border-radius: 15px;
   width: 80vw;
@@ -238,6 +239,14 @@
   font-size: inherit;
   color: #57aba4;
 }
+.toggle-highlight {
+  width: max-content;
+  color: var(--white);
+  background-color: var(--translucent-black);
+  border-radius: 12px;
+  padding: 6px 5px;
+}
+
 /*! CARD STACK */
 .cards-stack {
   /** Each card (base 50)  */
